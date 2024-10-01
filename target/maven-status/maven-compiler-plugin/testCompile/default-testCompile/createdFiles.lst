@@ -1,0 +1,10 @@
+genericLib\BaseClass.class
+pomPages\RegisterPage.class
+pomPages\HomePage.class
+genericLib\Utilities.class
+webTestCases\Module3_Search.class
+pomPages\LoginPage.class
+genericLib\ReUseableLib.class
+webTestCases\Module1_Registration.class
+webTestCases\TestRunner.class
+webTestCases\Module2_Login.class
