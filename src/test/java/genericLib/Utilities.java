@@ -344,7 +344,7 @@ public class Utilities {
 			switch (bName) {
 			case "chrome":
 				ChromeOptions ChromeOpt = new ChromeOptions();
-				ChromeOpt.addArguments("--headless=new");
+				ChromeOpt.addArguments("--headless");
 				driver=new ChromeDriver(ChromeOpt);
 				Reporter.log("Chrome browser launched", true);
 				test.log(Status.PASS, "Chrome browser launched");
@@ -358,14 +358,14 @@ public class Utilities {
 				break;
 			case "edge":
 				EdgeOptions edgeOpt=new EdgeOptions();
-				edgeOpt.addArguments("--headless=new");
+				edgeOpt.addArguments("--headless");
 				driver=new EdgeDriver(edgeOpt);
 				Reporter.log("Edge browser launched", true);
 				test.log(Status.PASS, "Edge browser launched");
 				break;
 			default:
 				ChromeOptions opt = new ChromeOptions();
-				opt.addArguments("--headless=new");
+				opt.addArguments("--headless");
 				driver=new ChromeDriver(opt);
 				Reporter.log("Launching default browser Chrome ("+bName+" is not valid browser)", true);
 				test.log(Status.PASS, "Launching default browser Chrome ("+bName+" is not valid browser)");

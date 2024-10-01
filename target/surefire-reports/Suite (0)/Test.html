@@ -1,0 +1,257 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Oct 01 23:47:11 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>189 seconds (189737 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='webTestCases.Module2_Login.tc004_VerifyLoginWithValidCredentials()'><b>tc004_VerifyLoginWithValidCredentials</b><br>Test class: webTestCases.Module2_Login<br/>
+<a href="#Output-48274513" onClick='toggleBox("Output-48274513", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-48274513" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-48274513">
+Chrome browser launched<br/>
+Browser maximized<br/>
+Navigated to https://demowebshop.tricentis.com/<br/>
+Implicit wait set to 5 seconds<br/>
+Register Link is displayed<br/>
+Clicked on LogIn Link<br/>
+Welcome Text is displayed<br/>
+Entered mkar@gmail.com into Email TextField<br/>
+Entered Ka@12345 into Password TextField<br/>
+Clicked on Login button<br/>
+Logout Link is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>webTestCases.Module2_Login@3270d194</td></tr>
+<tr>
+<td title='webTestCases.Module2_Login.tc005_VerifyLoginWithInValidCredentials()'><b>tc005_VerifyLoginWithInValidCredentials</b><br>Test class: webTestCases.Module2_Login<br/>
+<a href="#Output-77029509" onClick='toggleBox("Output-77029509", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-77029509" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-77029509">
+Firefox browser launched<br/>
+Browser maximized<br/>
+Navigated to https://demowebshop.tricentis.com/<br/>
+Implicit wait set to 5 seconds<br/>
+Register Link is displayed<br/>
+Clicked on LogIn Link<br/>
+Welcome Text is displayed<br/>
+Entered mkar@gmail.com into Email TextField<br/>
+Entered Ka@123456 into Password TextField<br/>
+Clicked on Login button<br/>
+Incorrect credentials Msg is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>webTestCases.Module2_Login@3270d194</td></tr>
+<tr>
+<td title='webTestCases.Module1_Registration.tc003_VerifyRegistrationWithAlreadyRegisteredData()'><b>tc003_VerifyRegistrationWithAlreadyRegisteredData</b><br>Test class: webTestCases.Module1_Registration<br/>
+<a href="#Output-309349909" onClick='toggleBox("Output-309349909", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-309349909" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-309349909">
+Chrome browser launched<br/>
+Browser maximized<br/>
+Navigated to https://demowebshop.tricentis.com/<br/>
+Implicit wait set to 5 seconds<br/>
+Register Link is displayed<br/>
+Clicked on Register Link<br/>
+Register Text is displayed<br/>
+Clicked on Male Radio button<br/>
+Entered Karthick into FirstName TextField<br/>
+Entered TestUser into LastName TextField<br/>
+Entered mkar@gmail.com into Email TextField<br/>
+Entered Ka@12345 into Password TextField<br/>
+Entered Ka@12345 into Confirm Password TextField<br/>
+Clicked on Register button<br/>
+Already exists error Msg is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>25</td>
+<td>webTestCases.Module1_Registration@55182842</td></tr>
+<tr>
+<td title='webTestCases.Module1_Registration.tc002_VerifyRegistrationWithInValidEmail()'><b>tc002_VerifyRegistrationWithInValidEmail</b><br>Test class: webTestCases.Module1_Registration<br/>
+<a href="#Output-1249070084" onClick='toggleBox("Output-1249070084", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1249070084" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1249070084">
+Chrome browser launched<br/>
+Browser maximized<br/>
+Navigated to https://demowebshop.tricentis.com/<br/>
+Implicit wait set to 5 seconds<br/>
+Register Link is displayed<br/>
+Clicked on Register Link<br/>
+Register Text is displayed<br/>
+Clicked on Male Radio button<br/>
+Entered Karthick into FirstName TextField<br/>
+Entered TestUser into LastName TextField<br/>
+Random Number generated : 84698<br/>
+Entered testUser84698 into Email TextField<br/>
+Entered Ka@12345 into Password TextField<br/>
+Entered Ka@12345 into Confirm Password TextField<br/>
+Clicked on Register button<br/>
+Wrong Email Text is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>webTestCases.Module1_Registration@55182842</td></tr>
+<tr>
+<td title='webTestCases.Module1_Registration.tc001_VerifyRegistrationWithValidData()'><b>tc001_VerifyRegistrationWithValidData</b><br>Test class: webTestCases.Module1_Registration<br/>
+<a href="#Output-569661948" onClick='toggleBox("Output-569661948", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-569661948" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-569661948">
+Chrome browser launched<br/>
+Browser maximized<br/>
+Navigated to https://demowebshop.tricentis.com/<br/>
+Implicit wait set to 5 seconds<br/>
+Register Link is displayed<br/>
+Clicked on Register Link<br/>
+Register Text is displayed<br/>
+Clicked on Male Radio button<br/>
+Entered Karthick into FirstName TextField<br/>
+Entered TestUser into LastName TextField<br/>
+Random Number generated : 77288<br/>
+Entered testUser77288@gmail.com into Email TextField<br/>
+Entered Ka@12345 into Password TextField<br/>
+Entered Ka@12345 into Confirm Password TextField<br/>
+Clicked on Register button<br/>
+Registration Completed Msg is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>26</td>
+<td>webTestCases.Module1_Registration@55182842</td></tr>
+<tr>
+<td title='webTestCases.Module2_Login.tc006_VerifyLoginWithNoCredentials()'><b>tc006_VerifyLoginWithNoCredentials</b><br>Test class: webTestCases.Module2_Login<br/>
+<a href="#Output-224878495" onClick='toggleBox("Output-224878495", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-224878495" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-224878495">
+Edge browser launched<br/>
+Browser maximized<br/>
+Navigated to https://demowebshop.tricentis.com/<br/>
+Implicit wait set to 5 seconds<br/>
+Register Link is displayed<br/>
+Clicked on LogIn Link<br/>
+Welcome Text is displayed<br/>
+Clicked on Login button<br/>
+No account found Msg is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>webTestCases.Module2_Login@3270d194</td></tr>
+<tr>
+<td title='webTestCases.Module3_Search.tc007_VerifySearchWithValidData()'><b>tc007_VerifySearchWithValidData</b><br>Test class: webTestCases.Module3_Search<br/>
+<a href="#Output-1902216702" onClick='toggleBox("Output-1902216702", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1902216702" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1902216702">
+Chrome browser launched<br/>
+Browser maximized<br/>
+Navigated to https://demowebshop.tricentis.com/<br/>
+Implicit wait set to 5 seconds<br/>
+Register Link is displayed<br/>
+Clicked on LogIn Link<br/>
+Welcome Text is displayed<br/>
+Entered mkar@gmail.com into Email TextField<br/>
+Entered Ka@12345 into Password TextField<br/>
+Clicked on Login button<br/>
+Logout Link is displayed<br/>
+Entered Computer into Search TF<br/>
+List of text fetched from Search Suggestions are [Build your own cheap computer, Build your own computer, Build your own expensive computer, Simple Computer]<br/>
+Clicked on Search Button<br/>
+Entered Computer into Search TF<br/>
+Clicked on Build your own cheap computer<br/>
+Entered Computer into Search TF<br/>
+Clicked on Build your own computer<br/>
+Entered Computer into Search TF<br/>
+Clicked on Build your own expensive computer<br/>
+Entered Computer into Search TF<br/>
+Clicked on Simple Computer<br/>
+</div>
+</td>
+<td></td>
+<td>56</td>
+<td>webTestCases.Module3_Search@235834f2</td></tr>
+</table><p>
+</body>
+</html>

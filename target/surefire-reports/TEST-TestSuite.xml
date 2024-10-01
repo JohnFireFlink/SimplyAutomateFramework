@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="webTestCases.TestRunner" time="0.66" tests="0" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="270.981" tests="10" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -10,13 +10,13 @@
     <property name="user.variant" value=""/>
     <property name="java.vendor.url" value="https://openlogic.com/"/>
     <property name="user.timezone" value="Asia/Calcutta"/>
-    <property name="suiteXmlFile" value="RegressionTest.xml"/>
+    <property name="suiteXmlFile" value="true"/>
     <property name="os.name" value="Windows 11"/>
     <property name="java.vm.specification.version" value="17"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Users\User\AppData\Roaming\fire-flink-client\JDK\jdk-11\bin"/>
-    <property name="sun.java.command" value="C:\Users\User\AppData\Local\Temp\surefire5589457498892738896\surefirebooter-20241001220317313_3.jar C:\Users\User\AppData\Local\Temp\surefire5589457498892738896 2024-10-01T22-03-16_855-jvmRun1 surefire-20241001220317313_1tmp surefire_0-20241001220317313_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\User\AppData\Local\Temp\surefire3746535602436181875\surefirebooter-20241001234549624_3.jar C:\Users\User\AppData\Local\Temp\surefire3746535602436181875 2024-10-01T23-45-49_311-jvmRun1 surefire-20241001234549624_1tmp surefire_0-20241001234549624_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="D:\eclipse-workspace\AutomateSimply-DemoWebShop\target\test-classes;D:\eclipse-workspace\AutomateSimply-DemoWebShop\target\classes;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-java\4.19.1\selenium-java-4.19.1.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-api\4.19.1\selenium-api-4.19.1.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.19.1\selenium-chrome-driver-4.19.1.jar;C:\Users\User\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.19.1\selenium-chromium-driver-4.19.1.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-json\4.19.1\selenium-json-4.19.1.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.19.1\selenium-manager-4.19.1.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v121\4.19.1\selenium-devtools-v121-4.19.1.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v122\4.19.1\selenium-devtools-v122-4.19.1.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v123\4.19.1\selenium-devtools-v123-4.19.1.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.19.1\selenium-devtools-v85-4.19.1.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.19.1\selenium-edge-driver-4.19.1.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.19.1\selenium-firefox-driver-4.19.1.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-http\4.19.1\selenium-http-4.19.1.jar;C:\Users\User\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.19.1\selenium-ie-driver-4.19.1.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.19.1\selenium-remote-driver-4.19.1.jar;C:\Users\User\.m2\repository\com\google\guava\guava\33.1.0-jre\guava-33.1.0-jre.jar;C:\Users\User\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\User\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\User\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\User\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\User\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\User\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.23.1-alpha\opentelemetry-semconv-1.23.1-alpha.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-api\1.36.0\opentelemetry-api-1.36.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-context\1.36.0\opentelemetry-context-1.36.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.36.0\opentelemetry-exporter-logging-1.36.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.36.0\opentelemetry-sdk-common-1.36.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.36.0\opentelemetry-sdk-extension-autoconfigure-spi-1.36.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.36.0\opentelemetry-sdk-extension-autoconfigure-1.36.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.36.0-alpha\opentelemetry-api-events-1.36.0-alpha.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.36.0\opentelemetry-sdk-trace-1.36.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.36.0-alpha\opentelemetry-extension-incubator-1.36.0-alpha.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.36.0\opentelemetry-sdk-1.36.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.36.0\opentelemetry-sdk-metrics-1.36.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.36.0\opentelemetry-sdk-logs-1.36.0.jar;C:\Users\User\.m2\repository\net\bytebuddy\byte-buddy\1.14.12\byte-buddy-1.14.12.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-os\4.19.1\selenium-os-4.19.1.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.19.1\selenium-safari-driver-4.19.1.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-support\4.19.1\selenium-support-4.19.1.jar;C:\Users\User\.m2\repository\org\apache\poi\poi-ooxml\4.1.2\poi-ooxml-4.1.2.jar;C:\Users\User\.m2\repository\org\apache\poi\poi\4.1.2\poi-4.1.2.jar;C:\Users\User\.m2\repository\commons-codec\commons-codec\1.13\commons-codec-1.13.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\User\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\User\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.2\poi-ooxml-schemas-4.1.2.jar;C:\Users\User\.m2\repository\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-compress\1.19\commons-compress-1.19.jar;C:\Users\User\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\User\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\User\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\User\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\User\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\User\.m2\repository\com\aventstack\extentreports\4.1.7\extentreports-4.1.7.jar;C:\Users\User\.m2\repository\org\freemarker\freemarker\2.3.29\freemarker-2.3.29.jar;C:\Users\User\.m2\repository\org\apache\httpcomponents\httpclient\4.5.2\httpclient-4.5.2.jar;C:\Users\User\.m2\repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar;C:\Users\User\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\User\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\User\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\User\.m2\repository\org\mongodb\mongodb-driver\3.12.0\mongodb-driver-3.12.0.jar;C:\Users\User\.m2\repository\org\mongodb\mongodb-driver-core\3.12.0\mongodb-driver-core-3.12.0.jar;C:\Users\User\.m2\repository\org\mongodb\bson\3.12.0\bson-3.12.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\User\AppData\Local\Temp\surefire5589457498892738896\surefirebooter-20241001220317313_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\User\AppData\Local\Temp\surefire3746535602436181875\surefirebooter-20241001234549624_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.11+9-adhoc..jdk17u"/>
@@ -58,4 +58,238 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
+  <testcase name="tc001_VerifyRegistrationWithValidData" classname="webTestCases.Module1_Registration" time="28.582">
+    <system-out><![CDATA[Chrome browser launched
+Browser maximized
+Navigated to https://demowebshop.tricentis.com/
+Implicit wait set to 5 seconds
+Register Link is displayed
+Clicked on Register Link
+Register Text is displayed
+Clicked on Male Radio button
+Entered Karthick into FirstName TextField
+Entered TestUser into LastName TextField
+Random Number generated : 66257
+Entered testUser66257@gmail.com into Email TextField
+Entered Ka@12345 into Password TextField
+Entered Ka@12345 into Confirm Password TextField
+Clicked on Register button
+Registration Completed Msg is displayed
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Oct 01, 2024 11:45:53 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 129
+Oct 01, 2024 11:45:53 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 129.0.6668.70. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.19.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="tc001_VerifyRegistrationWithValidData" classname="webTestCases.Module1_Registration" time="26.843">
+    <system-out><![CDATA[Browser closed
+Chrome browser launched
+Browser maximized
+Navigated to https://demowebshop.tricentis.com/
+Implicit wait set to 5 seconds
+Register Link is displayed
+Clicked on Register Link
+Register Text is displayed
+Clicked on Male Radio button
+Entered Karthick into FirstName TextField
+Entered TestUser into LastName TextField
+Random Number generated : 77288
+Entered testUser77288@gmail.com into Email TextField
+Entered Ka@12345 into Password TextField
+Entered Ka@12345 into Confirm Password TextField
+Clicked on Register button
+Registration Completed Msg is displayed
+]]></system-out>
+    <system-err><![CDATA[Oct 01, 2024 11:47:12 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 129
+Oct 01, 2024 11:47:12 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 129.0.6668.70. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.19.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="tc002_VerifyRegistrationWithInValidEmail" classname="webTestCases.Module1_Registration" time="23.729">
+    <system-out><![CDATA[Browser closed
+Chrome browser launched
+Browser maximized
+Navigated to https://demowebshop.tricentis.com/
+Implicit wait set to 5 seconds
+Register Link is displayed
+Clicked on Register Link
+Register Text is displayed
+Clicked on Male Radio button
+Entered Karthick into FirstName TextField
+Entered TestUser into LastName TextField
+Random Number generated : 61453
+Entered testUser61453 into Email TextField
+Entered Ka@12345 into Password TextField
+Entered Ka@12345 into Confirm Password TextField
+Clicked on Register button
+Wrong Email Text is displayed
+]]></system-out>
+    <system-err><![CDATA[Oct 01, 2024 11:46:22 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 129
+Oct 01, 2024 11:46:22 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 129.0.6668.70. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.19.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="tc002_VerifyRegistrationWithInValidEmail" classname="webTestCases.Module1_Registration" time="22.87">
+    <system-out><![CDATA[Browser closed
+Chrome browser launched
+Browser maximized
+Navigated to https://demowebshop.tricentis.com/
+Implicit wait set to 5 seconds
+Register Link is displayed
+Clicked on Register Link
+Register Text is displayed
+Clicked on Male Radio button
+Entered Karthick into FirstName TextField
+Entered TestUser into LastName TextField
+Random Number generated : 84698
+Entered testUser84698 into Email TextField
+Entered Ka@12345 into Password TextField
+Entered Ka@12345 into Confirm Password TextField
+Clicked on Register button
+Wrong Email Text is displayed
+]]></system-out>
+    <system-err><![CDATA[Oct 01, 2024 11:47:39 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 129
+Oct 01, 2024 11:47:39 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 129.0.6668.70. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.19.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="tc003_VerifyRegistrationWithAlreadyRegisteredData" classname="webTestCases.Module1_Registration" time="25.7">
+    <system-out><![CDATA[Browser closed
+Chrome browser launched
+Browser maximized
+Navigated to https://demowebshop.tricentis.com/
+Implicit wait set to 5 seconds
+Register Link is displayed
+Clicked on Register Link
+Register Text is displayed
+Clicked on Male Radio button
+Entered Karthick into FirstName TextField
+Entered TestUser into LastName TextField
+Entered mkar@gmail.com into Email TextField
+Entered Ka@12345 into Password TextField
+Entered Ka@12345 into Confirm Password TextField
+Clicked on Register button
+Already exists error Msg is displayed
+]]></system-out>
+    <system-err><![CDATA[Oct 01, 2024 11:46:45 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 129
+Oct 01, 2024 11:46:45 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 129.0.6668.70. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.19.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="tc003_VerifyRegistrationWithAlreadyRegisteredData" classname="webTestCases.Module1_Registration" time="25.134">
+    <system-out><![CDATA[Browser closed
+Chrome browser launched
+Browser maximized
+Navigated to https://demowebshop.tricentis.com/
+Implicit wait set to 5 seconds
+Register Link is displayed
+Clicked on Register Link
+Register Text is displayed
+Clicked on Male Radio button
+Entered Karthick into FirstName TextField
+Entered TestUser into LastName TextField
+Entered mkar@gmail.com into Email TextField
+Entered Ka@12345 into Password TextField
+Entered Ka@12345 into Confirm Password TextField
+Clicked on Register button
+Already exists error Msg is displayed
+]]></system-out>
+    <system-err><![CDATA[Oct 01, 2024 11:48:03 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 129
+Oct 01, 2024 11:48:03 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 129.0.6668.70. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.19.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="tc004_VerifyLoginWithValidCredentials" classname="webTestCases.Module2_Login" time="16.742">
+    <system-out><![CDATA[Browser closed
+Chrome browser launched
+Browser maximized
+Navigated to https://demowebshop.tricentis.com/
+Implicit wait set to 5 seconds
+Register Link is displayed
+Clicked on LogIn Link
+Welcome Text is displayed
+Entered mkar@gmail.com into Email TextField
+Entered Ka@12345 into Password TextField
+Clicked on Login button
+Logout Link is displayed
+]]></system-out>
+    <system-err><![CDATA[Oct 01, 2024 11:48:28 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 129
+Oct 01, 2024 11:48:28 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 129.0.6668.70. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.19.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="tc005_VerifyLoginWithInValidCredentials" classname="webTestCases.Module2_Login" time="20.745">
+    <system-out><![CDATA[Browser closed
+Firefox browser launched
+Browser maximized
+Navigated to https://demowebshop.tricentis.com/
+Implicit wait set to 5 seconds
+Register Link is displayed
+Clicked on LogIn Link
+Welcome Text is displayed
+Entered mkar@gmail.com into Email TextField
+Entered Ka@123456 into Password TextField
+Clicked on Login button
+Incorrect credentials Msg is displayed
+]]></system-out>
+  </testcase>
+  <testcase name="tc006_VerifyLoginWithNoCredentials" classname="webTestCases.Module2_Login" time="16.36">
+    <system-out><![CDATA[Browser closed
+Edge browser launched
+Browser maximized
+Navigated to https://demowebshop.tricentis.com/
+Implicit wait set to 5 seconds
+Register Link is displayed
+Clicked on LogIn Link
+Welcome Text is displayed
+Clicked on Login button
+No account found Msg is displayed
+]]></system-out>
+    <system-err><![CDATA[Oct 01, 2024 11:49:10 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 129
+Oct 01, 2024 11:49:10 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 129.0.2792.65. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.19.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="tc007_VerifySearchWithValidData" classname="webTestCases.Module3_Search" time="56.389">
+    <system-out><![CDATA[Browser closed
+Chrome browser launched
+Browser maximized
+Navigated to https://demowebshop.tricentis.com/
+Implicit wait set to 5 seconds
+Register Link is displayed
+Clicked on LogIn Link
+Welcome Text is displayed
+Entered mkar@gmail.com into Email TextField
+Entered Ka@12345 into Password TextField
+Clicked on Login button
+Logout Link is displayed
+Entered Computer into Search TF
+List of text fetched from Search Suggestions are [Build your own cheap computer, Build your own computer, Build your own expensive computer, Simple Computer]
+Clicked on Search Button
+Entered Computer into Search TF
+Clicked on Build your own cheap computer
+Entered Computer into Search TF
+Clicked on Build your own computer
+Entered Computer into Search TF
+Clicked on Build your own expensive computer
+Entered Computer into Search TF
+Clicked on Simple Computer
+]]></system-out>
+    <system-err><![CDATA[Oct 01, 2024 11:49:26 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 129
+Oct 01, 2024 11:49:26 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 129.0.6668.70. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.19.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
 </testsuite>
