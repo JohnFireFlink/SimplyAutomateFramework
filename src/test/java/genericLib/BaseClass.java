@@ -1,10 +1,13 @@
 package genericLib;
 
+import java.util.Map;
+
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -21,6 +24,7 @@ public class BaseClass {
 	public static ExtentSparkReporter html;
 	public static ExtentReports extent;
 	public ExtentTest test;
+	public Map<String, String> map;
 	
 	public HomePage hp=new HomePage();
 	public LoginPage lp=new LoginPage();
@@ -32,6 +36,11 @@ public class BaseClass {
 		html = new ExtentSparkReporter("./target/Report.html");
 		extent = new ExtentReports();
 		extent.attachReporter(html);
+	}
+	@BeforeClass
+	public void environmentData()
+	{
+		map = util.readFromGoogleSheetForUniqueDataInMultiRowTable("EnvironmentalData","Environment","Prod");
 	}
 	
 	@AfterMethod

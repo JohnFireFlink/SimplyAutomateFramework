@@ -17,7 +17,7 @@ public class Module2_Login extends ReUseableLib {
 		util.generateReport(test);
 		util.setDelayBtwnSteps(1);
 		
-		navigateToLoginPage("Chrome");
+		navigateToLoginPage("Chrome",map.get("URL"));
 		util.EnterInto(lp.emailTF(), mapData.get("Email"));
 		util.EnterInto(lp.pwdTF(), mapData.get("Password"));
 		util.clickOn(lp.logInBtn());
@@ -32,7 +32,7 @@ public class Module2_Login extends ReUseableLib {
 		util.generateReport(test);
 		util.setDelayBtwnSteps(1);
 		
-		navigateToLoginPage("FireFox");
+		navigateToLoginPage("FireFox",map.get("URL"));
 		util.EnterInto(lp.emailTF(), mapData.get("Email"));
 		util.EnterInto(lp.pwdTF(), mapData.get("InvalidPwd"));
 		util.clickOn(lp.logInBtn());
@@ -46,7 +46,7 @@ public class Module2_Login extends ReUseableLib {
 		util.generateReport(test);
 		util.setDelayBtwnSteps(1);
 		
-		navigateToLoginPage("Edge");
+		navigateToLoginPage("Edge",map.get("URL"));
 		util.clickOn(lp.logInBtn());
 		util.verifyIfDisplayed(lp.noAccountFoundMsg());
 	}

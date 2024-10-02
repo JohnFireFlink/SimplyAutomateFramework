@@ -17,7 +17,7 @@ public class Module1_Registration extends ReUseableLib {
 		util.generateReport(test);
 		util.setDelayBtwnSteps(1);
 
-		navigateToRegisterPage("Chrome");
+		navigateToRegisterPage("Chrome",map.get("URL"));
 
 		util.clickOn(rp.genderRadioBtn("Male"));
 		util.EnterInto(rp.firstNameTF(), mapData.get("FirstName"));
@@ -38,7 +38,7 @@ public class Module1_Registration extends ReUseableLib {
 		util.generateReport(test);
 		util.setDelayBtwnSteps(1);
 
-		navigateToRegisterPage("FireFox");
+		navigateToRegisterPage("FireFox",map.get("URL"));
 
 		util.clickOn(rp.genderRadioBtn("Male"));
 		util.EnterInto(rp.firstNameTF(),mapData.get("FirstName"));
@@ -59,7 +59,7 @@ public class Module1_Registration extends ReUseableLib {
 		util.generateReport(test);
 		util.setDelayBtwnSteps(1);
 		
-		navigateToRegisterPage("Chrome");
+		navigateToRegisterPage("Chrome",map.get("URL"));
 
 		util.clickOn(rp.genderRadioBtn("Male"));
 		util.EnterInto(rp.firstNameTF(), mapData.get("FirstName"));

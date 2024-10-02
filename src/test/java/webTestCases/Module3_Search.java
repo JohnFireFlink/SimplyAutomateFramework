@@ -18,7 +18,7 @@ public class Module3_Search extends ReUseableLib {
 		util.generateReport(test);
 		util.setDelayBtwnSteps(1);
 		
-		loginAsUser("Chrome");
+		loginAsUser("Chrome",map.get("URL"));
 		util.EnterInto(hp.searchTF(), mapData.get("SearchText"));
 		ArrayList<String> listOfEle = util.getTextOfAllElements(hp.searchSuggestions());
 		util.clickOn(hp.searchBtn());

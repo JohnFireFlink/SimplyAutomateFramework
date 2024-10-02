@@ -1,38 +1,245 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="1" failed="6" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[MapData : {Environment=Prod, URL=https://demowebshop.tricentis.com/}]]>
+    </line>
     <line>
       <![CDATA[MapData : {DomainName=testdemouser, FirstName=Karthick, TCNO=tc001, LastName=TestUser, Password=Ka@12345}]]>
     </line>
     <line>
-      <![CDATA[Failed to read data - Exception : java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because "this.test" is null]]>
+      <![CDATA[Chrome browser launched]]>
+    </line>
+    <line>
+      <![CDATA[Browser maximized]]>
+    </line>
+    <line>
+      <![CDATA[Navigated to https://demowebshop.tricentis.com/]]>
+    </line>
+    <line>
+      <![CDATA[Implicit wait set to 5 seconds]]>
+    </line>
+    <line>
+      <![CDATA[Register Link is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Register Link]]>
+    </line>
+    <line>
+      <![CDATA[Register Text is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Male Radio button]]>
+    </line>
+    <line>
+      <![CDATA[Entered Karthick into FirstName TextField]]>
+    </line>
+    <line>
+      <![CDATA[Entered TestUser into LastName TextField]]>
+    </line>
+    <line>
+      <![CDATA[Random Number generated : 95699]]>
+    </line>
+    <line>
+      <![CDATA[Entered testdemouser95699@gmail.com into Email TextField]]>
+    </line>
+    <line>
+      <![CDATA[Entered Ka@12345 into Password TextField]]>
+    </line>
+    <line>
+      <![CDATA[Entered Ka@12345 into Confirm Password TextField]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Register button]]>
+    </line>
+    <line>
+      <![CDATA[Registration Completed Msg is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Browser closed]]>
     </line>
     <line>
       <![CDATA[MapData : {InvalidEmail=testdemouser, FirstName=Karthick, TCNO=tc002, LastName=TestUser, Password=Ka@12345}]]>
     </line>
     <line>
-      <![CDATA[Failed to read data - Exception : java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because "this.test" is null]]>
+      <![CDATA[Firefox browser launched]]>
+    </line>
+    <line>
+      <![CDATA[Browser maximized]]>
+    </line>
+    <line>
+      <![CDATA[Navigated to https://demowebshop.tricentis.com/]]>
+    </line>
+    <line>
+      <![CDATA[Implicit wait set to 5 seconds]]>
+    </line>
+    <line>
+      <![CDATA[Register Link is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Register Link]]>
+    </line>
+    <line>
+      <![CDATA[Register Text is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Male Radio button]]>
+    </line>
+    <line>
+      <![CDATA[Entered Karthick into FirstName TextField]]>
+    </line>
+    <line>
+      <![CDATA[Entered TestUser into LastName TextField]]>
+    </line>
+    <line>
+      <![CDATA[Entered testdemouser into Email TextField]]>
+    </line>
+    <line>
+      <![CDATA[Entered Ka@12345 into Password TextField]]>
+    </line>
+    <line>
+      <![CDATA[Entered Ka@12345 into Confirm Password TextField]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Register button]]>
+    </line>
+    <line>
+      <![CDATA[Wrong Email Text is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Browser closed]]>
     </line>
     <line>
       <![CDATA[MapData : {RegisteredEmail=mkar@gmail.com, FirstName=Karthick, TCNO=tc003, LastName=TestUser, Password=Ka@12345}]]>
     </line>
     <line>
-      <![CDATA[Failed to read data - Exception : java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because "this.test" is null]]>
+      <![CDATA[Chrome browser launched]]>
+    </line>
+    <line>
+      <![CDATA[Browser maximized]]>
+    </line>
+    <line>
+      <![CDATA[Navigated to https://demowebshop.tricentis.com/]]>
+    </line>
+    <line>
+      <![CDATA[Implicit wait set to 5 seconds]]>
+    </line>
+    <line>
+      <![CDATA[Register Link is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Register Link]]>
+    </line>
+    <line>
+      <![CDATA[Register Text is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Male Radio button]]>
+    </line>
+    <line>
+      <![CDATA[Entered Karthick into FirstName TextField]]>
+    </line>
+    <line>
+      <![CDATA[Entered TestUser into LastName TextField]]>
+    </line>
+    <line>
+      <![CDATA[Entered mkar@gmail.com into Email TextField]]>
+    </line>
+    <line>
+      <![CDATA[Entered Ka@12345 into Password TextField]]>
+    </line>
+    <line>
+      <![CDATA[Entered Ka@12345 into Confirm Password TextField]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Register button]]>
+    </line>
+    <line>
+      <![CDATA[Already exists error Msg is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Browser closed]]>
+    </line>
+    <line>
+      <![CDATA[MapData : {Environment=Prod, URL=https://demowebshop.tricentis.com/}]]>
     </line>
     <line>
       <![CDATA[MapData : {Email=mkar@gmail.com, TCNO=tc004, Password=Ka@12345}]]>
     </line>
     <line>
-      <![CDATA[Failed to read data - Exception : java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because "this.test" is null]]>
+      <![CDATA[Chrome browser launched]]>
+    </line>
+    <line>
+      <![CDATA[Browser maximized]]>
+    </line>
+    <line>
+      <![CDATA[Navigated to https://demowebshop.tricentis.com/]]>
+    </line>
+    <line>
+      <![CDATA[Implicit wait set to 5 seconds]]>
+    </line>
+    <line>
+      <![CDATA[Register Link is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on LogIn Link]]>
+    </line>
+    <line>
+      <![CDATA[Welcome Text is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Entered mkar@gmail.com into Email TextField]]>
+    </line>
+    <line>
+      <![CDATA[Entered Ka@12345 into Password TextField]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Login button]]>
+    </line>
+    <line>
+      <![CDATA[Logout Link is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Browser closed]]>
     </line>
     <line>
       <![CDATA[MapData : {Email=mkar@gmail.com, TCNO=tc005, InvalidPwd=Ka@123456}]]>
     </line>
     <line>
-      <![CDATA[Failed to read data - Exception : java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because "this.test" is null]]>
+      <![CDATA[Firefox browser launched]]>
     </line>
     <line>
-      <![CDATA[MapData : {Environment=Prod, URL=https://demowebshop.tricentis.com/}]]>
+      <![CDATA[Browser maximized]]>
+    </line>
+    <line>
+      <![CDATA[Navigated to https://demowebshop.tricentis.com/]]>
+    </line>
+    <line>
+      <![CDATA[Implicit wait set to 5 seconds]]>
+    </line>
+    <line>
+      <![CDATA[Register Link is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on LogIn Link]]>
+    </line>
+    <line>
+      <![CDATA[Welcome Text is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Entered mkar@gmail.com into Email TextField]]>
+    </line>
+    <line>
+      <![CDATA[Entered Ka@123456 into Password TextField]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Login button]]>
+    </line>
+    <line>
+      <![CDATA[Incorrect credentials Msg is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Browser closed]]>
     </line>
     <line>
       <![CDATA[Edge browser launched]]>
@@ -65,181 +272,299 @@
       <![CDATA[Browser closed]]>
     </line>
     <line>
+      <![CDATA[MapData : {Environment=Prod, URL=https://demowebshop.tricentis.com/}]]>
+    </line>
+    <line>
       <![CDATA[MapData : {TCNO=tc007, SearchText=Computer}]]>
     </line>
     <line>
-      <![CDATA[Failed to read data - Exception : java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because "this.test" is null]]>
+      <![CDATA[Chrome browser launched]]>
+    </line>
+    <line>
+      <![CDATA[Browser maximized]]>
+    </line>
+    <line>
+      <![CDATA[Navigated to https://demowebshop.tricentis.com/]]>
+    </line>
+    <line>
+      <![CDATA[Implicit wait set to 5 seconds]]>
+    </line>
+    <line>
+      <![CDATA[Register Link is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on LogIn Link]]>
+    </line>
+    <line>
+      <![CDATA[Welcome Text is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Entered mkar@gmail.com into Email TextField]]>
+    </line>
+    <line>
+      <![CDATA[Entered Ka@12345 into Password TextField]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Login button]]>
+    </line>
+    <line>
+      <![CDATA[Logout Link is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Entered Computer into Search TF]]>
+    </line>
+    <line>
+      <![CDATA[List of text fetched from Search Suggestions are [Build your own cheap computer, Build your own computer, Build your own expensive computer, Simple Computer]]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Search Button]]>
+    </line>
+    <line>
+      <![CDATA[Entered Computer into Search TF]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Build your own cheap computer]]>
+    </line>
+    <line>
+      <![CDATA[Entered Computer into Search TF]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Build your own computer]]>
+    </line>
+    <line>
+      <![CDATA[Entered Computer into Search TF]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Build your own expensive computer]]>
+    </line>
+    <line>
+      <![CDATA[Entered Computer into Search TF]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Simple Computer]]>
+    </line>
+    <line>
+      <![CDATA[Browser closed]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-10-02T16:11:52 IST" name="Command line suite" finished-at="2024-10-02T16:12:16 IST" duration-ms="24331">
+  <suite started-at="2024-10-02T17:15:05 IST" name="Command line suite" finished-at="2024-10-02T17:18:10 IST" duration-ms="185861">
     <groups>
     </groups>
-    <test started-at="2024-10-02T16:11:52 IST" name="Command line test" finished-at="2024-10-02T16:12:16 IST" duration-ms="24331">
+    <test started-at="2024-10-02T17:15:05 IST" name="Command line test" finished-at="2024-10-02T17:18:10 IST" duration-ms="185861">
       <class name="webTestCases.Module3_Search">
-        <test-method signature="tc007_VerifySearchWithValidData()[pri:0, instance:webTestCases.Module3_Search@747ddf94]" started-at="2024-10-02T16:12:15 IST" name="tc007_VerifySearchWithValidData" finished-at="2024-10-02T16:12:16 IST" duration-ms="541" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because "this.test" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because "this.test" is null
-at genericLib.Utilities.readFromGoogleSheetForUniqueDataInSingleRowTable(Utilities.java:606)
-at webTestCases.Module3_Search.tc007_VerifySearchWithValidData(Module3_Search.java:16)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at webTestCases.TestRunner.main(TestRunner.java:13)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method is-config="true" signature="environmentData()[pri:0, instance:webTestCases.Module3_Search@8f4ea7c]" started-at="2024-10-02T17:17:19 IST" name="environmentData" finished-at="2024-10-02T17:17:20 IST" duration-ms="533" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[MapData : {Environment=Prod, URL=https://demowebshop.tricentis.com/}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- environmentData -->
+        <test-method signature="tc007_VerifySearchWithValidData()[pri:0, instance:webTestCases.Module3_Search@8f4ea7c]" started-at="2024-10-02T17:17:20 IST" name="tc007_VerifySearchWithValidData" finished-at="2024-10-02T17:18:10 IST" duration-ms="50606" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[MapData : {TCNO=tc007, SearchText=Computer}]]>
             </line>
             <line>
-              <![CDATA[Failed to read data - Exception : java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because "this.test" is null]]>
+              <![CDATA[Chrome browser launched]]>
+            </line>
+            <line>
+              <![CDATA[Browser maximized]]>
+            </line>
+            <line>
+              <![CDATA[Navigated to https://demowebshop.tricentis.com/]]>
+            </line>
+            <line>
+              <![CDATA[Implicit wait set to 5 seconds]]>
+            </line>
+            <line>
+              <![CDATA[Register Link is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on LogIn Link]]>
+            </line>
+            <line>
+              <![CDATA[Welcome Text is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Entered mkar@gmail.com into Email TextField]]>
+            </line>
+            <line>
+              <![CDATA[Entered Ka@12345 into Password TextField]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Login button]]>
+            </line>
+            <line>
+              <![CDATA[Logout Link is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Entered Computer into Search TF]]>
+            </line>
+            <line>
+              <![CDATA[List of text fetched from Search Suggestions are [Build your own cheap computer, Build your own computer, Build your own expensive computer, Simple Computer]]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Search Button]]>
+            </line>
+            <line>
+              <![CDATA[Entered Computer into Search TF]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Build your own cheap computer]]>
+            </line>
+            <line>
+              <![CDATA[Entered Computer into Search TF]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Build your own computer]]>
+            </line>
+            <line>
+              <![CDATA[Entered Computer into Search TF]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Build your own expensive computer]]>
+            </line>
+            <line>
+              <![CDATA[Entered Computer into Search TF]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Simple Computer]]>
             </line>
           </reporter-output>
         </test-method> <!-- tc007_VerifySearchWithValidData -->
-        <test-method is-config="true" signature="testOver(org.testng.ITestResult)[pri:0, instance:webTestCases.Module3_Search@747ddf94]" started-at="2024-10-02T16:12:16 IST" name="testOver" finished-at="2024-10-02T16:12:16 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="testOver(org.testng.ITestResult)[pri:0, instance:webTestCases.Module3_Search@8f4ea7c]" started-at="2024-10-02T17:18:10 IST" name="testOver" finished-at="2024-10-02T17:18:10 IST" duration-ms="233" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=tc007_VerifySearchWithValidData status=FAILURE method=Module3_Search.tc007_VerifySearchWithValidData()[pri:0, instance:webTestCases.Module3_Search@747ddf94] output=MapData : {TCNO=tc007, SearchText=Computer}]]]>
+                <![CDATA[[TestResult name=tc007_VerifySearchWithValidData status=SUCCESS method=Module3_Search.tc007_VerifySearchWithValidData()[pri:0, instance:webTestCases.Module3_Search@8f4ea7c] output=MapData : {TCNO=tc007, SearchText=Computer}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[Browser closed]]>
+            </line>
           </reporter-output>
         </test-method> <!-- testOver -->
       </class> <!-- webTestCases.Module3_Search -->
       <class name="webTestCases.Module2_Login">
-        <test-method signature="tc004_VerifyLoginWithValidCredentials()[pri:0, instance:webTestCases.Module2_Login@2f9f7dcf]" started-at="2024-10-02T16:11:55 IST" name="tc004_VerifyLoginWithValidCredentials" finished-at="2024-10-02T16:11:55 IST" duration-ms="510" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because "this.test" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because "this.test" is null
-at genericLib.Utilities.readFromGoogleSheetForUniqueDataInSingleRowTable(Utilities.java:606)
-at webTestCases.Module2_Login.tc004_VerifyLoginWithValidCredentials(Module2_Login.java:15)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at webTestCases.TestRunner.main(TestRunner.java:13)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method is-config="true" signature="environmentData()[pri:0, instance:webTestCases.Module2_Login@223d2c72]" started-at="2024-10-02T17:16:24 IST" name="environmentData" finished-at="2024-10-02T17:16:24 IST" duration-ms="718" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[MapData : {Environment=Prod, URL=https://demowebshop.tricentis.com/}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- environmentData -->
+        <test-method signature="tc004_VerifyLoginWithValidCredentials()[pri:0, instance:webTestCases.Module2_Login@223d2c72]" started-at="2024-10-02T17:16:24 IST" name="tc004_VerifyLoginWithValidCredentials" finished-at="2024-10-02T17:16:42 IST" duration-ms="18188" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[MapData : {Email=mkar@gmail.com, TCNO=tc004, Password=Ka@12345}]]>
             </line>
             <line>
-              <![CDATA[Failed to read data - Exception : java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because "this.test" is null]]>
+              <![CDATA[Chrome browser launched]]>
+            </line>
+            <line>
+              <![CDATA[Browser maximized]]>
+            </line>
+            <line>
+              <![CDATA[Navigated to https://demowebshop.tricentis.com/]]>
+            </line>
+            <line>
+              <![CDATA[Implicit wait set to 5 seconds]]>
+            </line>
+            <line>
+              <![CDATA[Register Link is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on LogIn Link]]>
+            </line>
+            <line>
+              <![CDATA[Welcome Text is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Entered mkar@gmail.com into Email TextField]]>
+            </line>
+            <line>
+              <![CDATA[Entered Ka@12345 into Password TextField]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Login button]]>
+            </line>
+            <line>
+              <![CDATA[Logout Link is displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- tc004_VerifyLoginWithValidCredentials -->
-        <test-method is-config="true" signature="testOver(org.testng.ITestResult)[pri:0, instance:webTestCases.Module2_Login@2f9f7dcf]" started-at="2024-10-02T16:11:55 IST" name="testOver" finished-at="2024-10-02T16:11:55 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="testOver(org.testng.ITestResult)[pri:0, instance:webTestCases.Module2_Login@223d2c72]" started-at="2024-10-02T17:16:42 IST" name="testOver" finished-at="2024-10-02T17:16:43 IST" duration-ms="209" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=tc004_VerifyLoginWithValidCredentials status=FAILURE method=Module2_Login.tc004_VerifyLoginWithValidCredentials()[pri:0, instance:webTestCases.Module2_Login@2f9f7dcf] output=MapData : {Email=mkar@gmail.com, TCNO=tc004, Password=Ka@12345}]]]>
+                <![CDATA[[TestResult name=tc004_VerifyLoginWithValidCredentials status=SUCCESS method=Module2_Login.tc004_VerifyLoginWithValidCredentials()[pri:0, instance:webTestCases.Module2_Login@223d2c72] output=MapData : {Email=mkar@gmail.com, TCNO=tc004, Password=Ka@12345}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[Browser closed]]>
+            </line>
           </reporter-output>
         </test-method> <!-- testOver -->
-        <test-method signature="tc005_VerifyLoginWithInValidCredentials()[pri:0, instance:webTestCases.Module2_Login@2f9f7dcf]" started-at="2024-10-02T16:11:55 IST" name="tc005_VerifyLoginWithInValidCredentials" finished-at="2024-10-02T16:11:56 IST" duration-ms="770" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because "this.test" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because "this.test" is null
-at genericLib.Utilities.readFromGoogleSheetForUniqueDataInSingleRowTable(Utilities.java:606)
-at webTestCases.Module2_Login.tc005_VerifyLoginWithInValidCredentials(Module2_Login.java:30)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at webTestCases.TestRunner.main(TestRunner.java:13)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="tc005_VerifyLoginWithInValidCredentials()[pri:0, instance:webTestCases.Module2_Login@223d2c72]" started-at="2024-10-02T17:16:43 IST" name="tc005_VerifyLoginWithInValidCredentials" finished-at="2024-10-02T17:17:02 IST" duration-ms="18974" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[MapData : {Email=mkar@gmail.com, TCNO=tc005, InvalidPwd=Ka@123456}]]>
             </line>
             <line>
-              <![CDATA[Failed to read data - Exception : java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because "this.test" is null]]>
+              <![CDATA[Firefox browser launched]]>
+            </line>
+            <line>
+              <![CDATA[Browser maximized]]>
+            </line>
+            <line>
+              <![CDATA[Navigated to https://demowebshop.tricentis.com/]]>
+            </line>
+            <line>
+              <![CDATA[Implicit wait set to 5 seconds]]>
+            </line>
+            <line>
+              <![CDATA[Register Link is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on LogIn Link]]>
+            </line>
+            <line>
+              <![CDATA[Welcome Text is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Entered mkar@gmail.com into Email TextField]]>
+            </line>
+            <line>
+              <![CDATA[Entered Ka@123456 into Password TextField]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Login button]]>
+            </line>
+            <line>
+              <![CDATA[Incorrect credentials Msg is displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- tc005_VerifyLoginWithInValidCredentials -->
-        <test-method signature="tc006_VerifyLoginWithNoCredentials()[pri:0, instance:webTestCases.Module2_Login@2f9f7dcf]" started-at="2024-10-02T16:11:56 IST" name="tc006_VerifyLoginWithNoCredentials" finished-at="2024-10-02T16:12:14 IST" duration-ms="17803" status="PASS">
+        <test-method is-config="true" signature="testOver(org.testng.ITestResult)[pri:0, instance:webTestCases.Module2_Login@223d2c72]" started-at="2024-10-02T17:17:02 IST" name="testOver" finished-at="2024-10-02T17:17:02 IST" duration-ms="732" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc005_VerifyLoginWithInValidCredentials status=SUCCESS method=Module2_Login.tc005_VerifyLoginWithInValidCredentials()[pri:0, instance:webTestCases.Module2_Login@223d2c72] output=MapData : {Email=mkar@gmail.com, TCNO=tc005, InvalidPwd=Ka@123456}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
             <line>
-              <![CDATA[MapData : {Environment=Prod, URL=https://demowebshop.tricentis.com/}]]>
+              <![CDATA[Browser closed]]>
             </line>
+          </reporter-output>
+        </test-method> <!-- testOver -->
+        <test-method signature="tc006_VerifyLoginWithNoCredentials()[pri:0, instance:webTestCases.Module2_Login@223d2c72]" started-at="2024-10-02T17:17:02 IST" name="tc006_VerifyLoginWithNoCredentials" finished-at="2024-10-02T17:17:18 IST" duration-ms="15380" status="PASS">
+          <reporter-output>
             <line>
               <![CDATA[Edge browser launched]]>
             </line>
@@ -269,22 +594,11 @@ at webTestCases.TestRunner.main(TestRunner.java:13)
             </line>
           </reporter-output>
         </test-method> <!-- tc006_VerifyLoginWithNoCredentials -->
-        <test-method is-config="true" signature="testOver(org.testng.ITestResult)[pri:0, instance:webTestCases.Module2_Login@2f9f7dcf]" started-at="2024-10-02T16:11:56 IST" name="testOver" finished-at="2024-10-02T16:11:56 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="testOver(org.testng.ITestResult)[pri:0, instance:webTestCases.Module2_Login@223d2c72]" started-at="2024-10-02T17:17:18 IST" name="testOver" finished-at="2024-10-02T17:17:19 IST" duration-ms="1246" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=tc005_VerifyLoginWithInValidCredentials status=FAILURE method=Module2_Login.tc005_VerifyLoginWithInValidCredentials()[pri:0, instance:webTestCases.Module2_Login@2f9f7dcf] output=MapData : {Email=mkar@gmail.com, TCNO=tc005, InvalidPwd=Ka@123456}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testOver -->
-        <test-method is-config="true" signature="testOver(org.testng.ITestResult)[pri:0, instance:webTestCases.Module2_Login@2f9f7dcf]" started-at="2024-10-02T16:12:14 IST" name="testOver" finished-at="2024-10-02T16:12:15 IST" duration-ms="1291" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=tc006_VerifyLoginWithNoCredentials status=SUCCESS method=Module2_Login.tc006_VerifyLoginWithNoCredentials()[pri:0, instance:webTestCases.Module2_Login@2f9f7dcf] output=MapData : {Environment=Prod, URL=https://demowebshop.tricentis.com/}]]]>
+                <![CDATA[[TestResult name=tc006_VerifyLoginWithNoCredentials status=SUCCESS method=Module2_Login.tc006_VerifyLoginWithNoCredentials()[pri:0, instance:webTestCases.Module2_Login@223d2c72] output=Edge browser launched]]]>
               </value>
             </param>
           </params>
@@ -296,179 +610,219 @@ at webTestCases.TestRunner.main(TestRunner.java:13)
         </test-method> <!-- testOver -->
       </class> <!-- webTestCases.Module2_Login -->
       <class name="webTestCases.Module1_Registration">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:webTestCases.Module1_Registration@59662a0b]" started-at="2024-10-02T16:11:51 IST" name="setUp" finished-at="2024-10-02T16:11:52 IST" duration-ms="171" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:webTestCases.Module1_Registration@36bc55de]" started-at="2024-10-02T17:15:04 IST" name="setUp" finished-at="2024-10-02T17:15:05 IST" duration-ms="192" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="tc001_VerifyRegistrationWithValidData()[pri:0, instance:webTestCases.Module1_Registration@59662a0b]" started-at="2024-10-02T16:11:52 IST" name="tc001_VerifyRegistrationWithValidData" finished-at="2024-10-02T16:11:54 IST" duration-ms="2165" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because "this.test" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because "this.test" is null
-at genericLib.Utilities.readFromGoogleSheetForUniqueDataInSingleRowTable(Utilities.java:606)
-at webTestCases.Module1_Registration.tc001_VerifyRegistrationWithValidData(Module1_Registration.java:15)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at webTestCases.TestRunner.main(TestRunner.java:13)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method is-config="true" signature="environmentData()[pri:0, instance:webTestCases.Module1_Registration@36bc55de]" started-at="2024-10-02T17:15:05 IST" name="environmentData" finished-at="2024-10-02T17:15:07 IST" duration-ms="2090" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[MapData : {Environment=Prod, URL=https://demowebshop.tricentis.com/}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- environmentData -->
+        <test-method signature="tc001_VerifyRegistrationWithValidData()[pri:0, instance:webTestCases.Module1_Registration@36bc55de]" started-at="2024-10-02T17:15:07 IST" name="tc001_VerifyRegistrationWithValidData" finished-at="2024-10-02T17:15:34 IST" duration-ms="27306" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[MapData : {DomainName=testdemouser, FirstName=Karthick, TCNO=tc001, LastName=TestUser, Password=Ka@12345}]]>
             </line>
             <line>
-              <![CDATA[Failed to read data - Exception : java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because "this.test" is null]]>
+              <![CDATA[Chrome browser launched]]>
+            </line>
+            <line>
+              <![CDATA[Browser maximized]]>
+            </line>
+            <line>
+              <![CDATA[Navigated to https://demowebshop.tricentis.com/]]>
+            </line>
+            <line>
+              <![CDATA[Implicit wait set to 5 seconds]]>
+            </line>
+            <line>
+              <![CDATA[Register Link is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Register Link]]>
+            </line>
+            <line>
+              <![CDATA[Register Text is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Male Radio button]]>
+            </line>
+            <line>
+              <![CDATA[Entered Karthick into FirstName TextField]]>
+            </line>
+            <line>
+              <![CDATA[Entered TestUser into LastName TextField]]>
+            </line>
+            <line>
+              <![CDATA[Random Number generated : 95699]]>
+            </line>
+            <line>
+              <![CDATA[Entered testdemouser95699@gmail.com into Email TextField]]>
+            </line>
+            <line>
+              <![CDATA[Entered Ka@12345 into Password TextField]]>
+            </line>
+            <line>
+              <![CDATA[Entered Ka@12345 into Confirm Password TextField]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Register button]]>
+            </line>
+            <line>
+              <![CDATA[Registration Completed Msg is displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- tc001_VerifyRegistrationWithValidData -->
-        <test-method is-config="true" signature="testOver(org.testng.ITestResult)[pri:0, instance:webTestCases.Module1_Registration@59662a0b]" started-at="2024-10-02T16:11:54 IST" name="testOver" finished-at="2024-10-02T16:11:54 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="testOver(org.testng.ITestResult)[pri:0, instance:webTestCases.Module1_Registration@36bc55de]" started-at="2024-10-02T17:15:34 IST" name="testOver" finished-at="2024-10-02T17:15:34 IST" duration-ms="247" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=tc001_VerifyRegistrationWithValidData status=FAILURE method=Module1_Registration.tc001_VerifyRegistrationWithValidData()[pri:0, instance:webTestCases.Module1_Registration@59662a0b] output=MapData : {DomainName=testdemouser, FirstName=Karthick, TCNO=tc001, LastName=TestUser, Password=Ka@12345}]]]>
+                <![CDATA[[TestResult name=tc001_VerifyRegistrationWithValidData status=SUCCESS method=Module1_Registration.tc001_VerifyRegistrationWithValidData()[pri:0, instance:webTestCases.Module1_Registration@36bc55de] output=MapData : {DomainName=testdemouser, FirstName=Karthick, TCNO=tc001, LastName=TestUser, Password=Ka@12345}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[Browser closed]]>
+            </line>
           </reporter-output>
         </test-method> <!-- testOver -->
-        <test-method signature="tc002_VerifyRegistrationWithInValidEmail()[pri:0, instance:webTestCases.Module1_Registration@59662a0b]" started-at="2024-10-02T16:11:54 IST" name="tc002_VerifyRegistrationWithInValidEmail" finished-at="2024-10-02T16:11:54 IST" duration-ms="601" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because "this.test" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because "this.test" is null
-at genericLib.Utilities.readFromGoogleSheetForUniqueDataInSingleRowTable(Utilities.java:606)
-at webTestCases.Module1_Registration.tc002_VerifyRegistrationWithInValidEmail(Module1_Registration.java:36)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at webTestCases.TestRunner.main(TestRunner.java:13)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="tc002_VerifyRegistrationWithInValidEmail()[pri:0, instance:webTestCases.Module1_Registration@36bc55de]" started-at="2024-10-02T17:15:34 IST" name="tc002_VerifyRegistrationWithInValidEmail" finished-at="2024-10-02T17:15:59 IST" duration-ms="25226" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[MapData : {InvalidEmail=testdemouser, FirstName=Karthick, TCNO=tc002, LastName=TestUser, Password=Ka@12345}]]>
             </line>
             <line>
-              <![CDATA[Failed to read data - Exception : java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because "this.test" is null]]>
+              <![CDATA[Firefox browser launched]]>
+            </line>
+            <line>
+              <![CDATA[Browser maximized]]>
+            </line>
+            <line>
+              <![CDATA[Navigated to https://demowebshop.tricentis.com/]]>
+            </line>
+            <line>
+              <![CDATA[Implicit wait set to 5 seconds]]>
+            </line>
+            <line>
+              <![CDATA[Register Link is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Register Link]]>
+            </line>
+            <line>
+              <![CDATA[Register Text is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Male Radio button]]>
+            </line>
+            <line>
+              <![CDATA[Entered Karthick into FirstName TextField]]>
+            </line>
+            <line>
+              <![CDATA[Entered TestUser into LastName TextField]]>
+            </line>
+            <line>
+              <![CDATA[Entered testdemouser into Email TextField]]>
+            </line>
+            <line>
+              <![CDATA[Entered Ka@12345 into Password TextField]]>
+            </line>
+            <line>
+              <![CDATA[Entered Ka@12345 into Confirm Password TextField]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Register button]]>
+            </line>
+            <line>
+              <![CDATA[Wrong Email Text is displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- tc002_VerifyRegistrationWithInValidEmail -->
-        <test-method is-config="true" signature="testOver(org.testng.ITestResult)[pri:0, instance:webTestCases.Module1_Registration@59662a0b]" started-at="2024-10-02T16:11:54 IST" name="testOver" finished-at="2024-10-02T16:11:54 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="testOver(org.testng.ITestResult)[pri:0, instance:webTestCases.Module1_Registration@36bc55de]" started-at="2024-10-02T17:15:59 IST" name="testOver" finished-at="2024-10-02T17:16:00 IST" duration-ms="688" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=tc002_VerifyRegistrationWithInValidEmail status=FAILURE method=Module1_Registration.tc002_VerifyRegistrationWithInValidEmail()[pri:0, instance:webTestCases.Module1_Registration@59662a0b] output=MapData : {InvalidEmail=testdemouser, FirstName=Karthick, TCNO=tc002, LastName=TestUser, Password=Ka@12345}]]]>
+                <![CDATA[[TestResult name=tc002_VerifyRegistrationWithInValidEmail status=SUCCESS method=Module1_Registration.tc002_VerifyRegistrationWithInValidEmail()[pri:0, instance:webTestCases.Module1_Registration@36bc55de] output=MapData : {InvalidEmail=testdemouser, FirstName=Karthick, TCNO=tc002, LastName=TestUser, Password=Ka@12345}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[Browser closed]]>
+            </line>
           </reporter-output>
         </test-method> <!-- testOver -->
-        <test-method signature="tc003_VerifyRegistrationWithAlreadyRegisteredData()[pri:0, instance:webTestCases.Module1_Registration@59662a0b]" started-at="2024-10-02T16:11:54 IST" name="tc003_VerifyRegistrationWithAlreadyRegisteredData" finished-at="2024-10-02T16:11:55 IST" duration-ms="607" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because "this.test" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because "this.test" is null
-at genericLib.Utilities.readFromGoogleSheetForUniqueDataInSingleRowTable(Utilities.java:606)
-at webTestCases.Module1_Registration.tc003_VerifyRegistrationWithAlreadyRegisteredData(Module1_Registration.java:57)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at webTestCases.TestRunner.main(TestRunner.java:13)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="tc003_VerifyRegistrationWithAlreadyRegisteredData()[pri:0, instance:webTestCases.Module1_Registration@36bc55de]" started-at="2024-10-02T17:16:00 IST" name="tc003_VerifyRegistrationWithAlreadyRegisteredData" finished-at="2024-10-02T17:16:23 IST" duration-ms="23270" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[MapData : {RegisteredEmail=mkar@gmail.com, FirstName=Karthick, TCNO=tc003, LastName=TestUser, Password=Ka@12345}]]>
             </line>
             <line>
-              <![CDATA[Failed to read data - Exception : java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because "this.test" is null]]>
+              <![CDATA[Chrome browser launched]]>
+            </line>
+            <line>
+              <![CDATA[Browser maximized]]>
+            </line>
+            <line>
+              <![CDATA[Navigated to https://demowebshop.tricentis.com/]]>
+            </line>
+            <line>
+              <![CDATA[Implicit wait set to 5 seconds]]>
+            </line>
+            <line>
+              <![CDATA[Register Link is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Register Link]]>
+            </line>
+            <line>
+              <![CDATA[Register Text is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Male Radio button]]>
+            </line>
+            <line>
+              <![CDATA[Entered Karthick into FirstName TextField]]>
+            </line>
+            <line>
+              <![CDATA[Entered TestUser into LastName TextField]]>
+            </line>
+            <line>
+              <![CDATA[Entered mkar@gmail.com into Email TextField]]>
+            </line>
+            <line>
+              <![CDATA[Entered Ka@12345 into Password TextField]]>
+            </line>
+            <line>
+              <![CDATA[Entered Ka@12345 into Confirm Password TextField]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Register button]]>
+            </line>
+            <line>
+              <![CDATA[Already exists error Msg is displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- tc003_VerifyRegistrationWithAlreadyRegisteredData -->
-        <test-method is-config="true" signature="testOver(org.testng.ITestResult)[pri:0, instance:webTestCases.Module1_Registration@59662a0b]" started-at="2024-10-02T16:11:55 IST" name="testOver" finished-at="2024-10-02T16:11:55 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="testOver(org.testng.ITestResult)[pri:0, instance:webTestCases.Module1_Registration@36bc55de]" started-at="2024-10-02T17:16:23 IST" name="testOver" finished-at="2024-10-02T17:16:24 IST" duration-ms="172" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=tc003_VerifyRegistrationWithAlreadyRegisteredData status=FAILURE method=Module1_Registration.tc003_VerifyRegistrationWithAlreadyRegisteredData()[pri:0, instance:webTestCases.Module1_Registration@59662a0b] output=MapData : {RegisteredEmail=mkar@gmail.com, FirstName=Karthick, TCNO=tc003, LastName=TestUser, Password=Ka@12345}]]]>
+                <![CDATA[[TestResult name=tc003_VerifyRegistrationWithAlreadyRegisteredData status=SUCCESS method=Module1_Registration.tc003_VerifyRegistrationWithAlreadyRegisteredData()[pri:0, instance:webTestCases.Module1_Registration@36bc55de] output=MapData : {RegisteredEmail=mkar@gmail.com, FirstName=Karthick, TCNO=tc003, LastName=TestUser, Password=Ka@12345}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[Browser closed]]>
+            </line>
           </reporter-output>
         </test-method> <!-- testOver -->
-        <test-method is-config="true" signature="upDateReport()[pri:0, instance:webTestCases.Module1_Registration@59662a0b]" started-at="2024-10-02T16:12:16 IST" name="upDateReport" finished-at="2024-10-02T16:12:16 IST" duration-ms="307" status="PASS">
+        <test-method is-config="true" signature="upDateReport()[pri:0, instance:webTestCases.Module1_Registration@36bc55de]" started-at="2024-10-02T17:18:10 IST" name="upDateReport" finished-at="2024-10-02T17:18:11 IST" duration-ms="524" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- upDateReport -->

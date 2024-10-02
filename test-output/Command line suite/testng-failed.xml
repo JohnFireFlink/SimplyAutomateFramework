@@ -11,19 +11,10 @@
           <include name="setUp"/>
         </methods>
       </class> <!-- webTestCases.Module3_Search -->
-      <class name="webTestCases.Module1_Registration">
-        <methods>
-          <include name="tc002_VerifyRegistrationWithInValidEmail"/>
-          <include name="testOver"/>
-          <include name="tc001_VerifyRegistrationWithValidData"/>
-          <include name="tc003_VerifyRegistrationWithAlreadyRegisteredData"/>
-          <include name="upDateReport"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- webTestCases.Module1_Registration -->
       <class name="webTestCases.Module2_Login">
         <methods>
           <include name="testOver"/>
+          <include name="tc006_VerifyLoginWithNoCredentials"/>
           <include name="tc004_VerifyLoginWithValidCredentials"/>
           <include name="upDateReport"/>
           <include name="tc005_VerifyLoginWithInValidCredentials"/>

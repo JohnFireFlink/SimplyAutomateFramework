@@ -499,25 +499,20 @@ public class Utilities {
 			}
 			
 			Reporter.log("MapData : "+mapData.toString(), true);
-			test.log(Status.PASS, "MapData : "+mapData.toString());
-
 		} 
 		catch (NullPointerException e) 
 		{
 			Reporter.log("No header found", true);
-			test.log(Status.FAIL, "No header found");
 			throw e;
 		}
 		catch (IndexOutOfBoundsException e) 
 		{
 			Reporter.log("Unique Data not found", true);
-			test.log(Status.FAIL, "Unique Data not found");
 			throw e;
 		}
 		catch (Exception e) 
 		{
 			Reporter.log("Failed to read data - Exception : "+e, true);
-			test.log(Status.FAIL, "Failed to read data - Exception : "+e);
 			throw e;
 		}
 		return mapData;
@@ -598,12 +593,10 @@ public class Utilities {
 				}
 			}
 			Reporter.log("MapData : "+mapData.toString(), true);
-			test.log(Status.PASS, "MapData : "+mapData.toString());
 		} 
 		catch (Exception e) 
 		{
 			Reporter.log("Failed to read data - Exception : "+e, true);
-			test.log(Status.FAIL, "Failed to read data - Exception : "+e);
 			throw e;
 		}
 		
