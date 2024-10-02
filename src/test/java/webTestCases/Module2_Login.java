@@ -12,8 +12,8 @@ public class Module2_Login extends ReUseableLib {
 	@Test
 	public void tc004_VerifyLoginWithValidCredentials() throws InterruptedException
 	{
-		Map<String, String> mapData = util.readFromGoogleSheetForUniqueDataInSingleRowTable("Login", "tc004");
 		test=extent.createTest(Reporter.getCurrentTestResult().getName());
+		Map<String, String> mapData = util.readFromGoogleSheetForUniqueDataInSingleRowTable("Login", "tc004");
 		util.generateReport(test);
 		util.setDelayBtwnSteps(1);
 		
@@ -27,8 +27,8 @@ public class Module2_Login extends ReUseableLib {
 	@Test
 	public void tc005_VerifyLoginWithInValidCredentials() throws InterruptedException
 	{
-		Map<String, String> mapData = util.readFromGoogleSheetForUniqueDataInSingleRowTable("Login", "tc005");
 		test=extent.createTest(Reporter.getCurrentTestResult().getName());
+		Map<String, String> mapData = util.readFromGoogleSheetForUniqueDataInSingleRowTable("Login", "tc005");
 		util.generateReport(test);
 		util.setDelayBtwnSteps(1);
 		

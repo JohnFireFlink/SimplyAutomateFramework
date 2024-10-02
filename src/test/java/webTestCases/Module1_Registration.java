@@ -12,8 +12,8 @@ public class Module1_Registration extends ReUseableLib {
 	@Test
 	public void tc001_VerifyRegistrationWithValidData() throws InterruptedException
 	{
-		Map<String, String> mapData = util.readFromGoogleSheetForUniqueDataInSingleRowTable("Registration", "tc001");
 		test=extent.createTest(Reporter.getCurrentTestResult().getName());
+		Map<String, String> mapData = util.readFromGoogleSheetForUniqueDataInSingleRowTable("Registration", "tc001");
 		util.generateReport(test);
 		util.setDelayBtwnSteps(1);
 
@@ -33,8 +33,8 @@ public class Module1_Registration extends ReUseableLib {
 	@Test
 	public void tc002_VerifyRegistrationWithInValidEmail() throws InterruptedException
 	{
-		Map<String, String> mapData = util.readFromGoogleSheetForUniqueDataInSingleRowTable("Registration", "tc002");
 		test=extent.createTest(Reporter.getCurrentTestResult().getName());
+		Map<String, String> mapData = util.readFromGoogleSheetForUniqueDataInSingleRowTable("Registration", "tc002");
 		util.generateReport(test);
 		util.setDelayBtwnSteps(1);
 
@@ -54,8 +54,8 @@ public class Module1_Registration extends ReUseableLib {
 	@Test
 	public void tc003_VerifyRegistrationWithAlreadyRegisteredData() throws InterruptedException
 	{
-		Map<String, String> mapData = util.readFromGoogleSheetForUniqueDataInSingleRowTable("Registration", "tc003");
 		test=extent.createTest(Reporter.getCurrentTestResult().getName());
+		Map<String, String> mapData = util.readFromGoogleSheetForUniqueDataInSingleRowTable("Registration", "tc003");
 		util.generateReport(test);
 		util.setDelayBtwnSteps(1);
 		

@@ -13,8 +13,8 @@ public class Module3_Search extends ReUseableLib {
 	@Test
 	public void tc007_VerifySearchWithValidData() throws InterruptedException
 	{
-		Map<String, String> mapData = util.readFromGoogleSheetForUniqueDataInSingleRowTable("Search", "tc007");
 		test=extent.createTest(Reporter.getCurrentTestResult().getName());
+		Map<String, String> mapData = util.readFromGoogleSheetForUniqueDataInSingleRowTable("Search", "tc007");
 		util.generateReport(test);
 		util.setDelayBtwnSteps(1);
 		

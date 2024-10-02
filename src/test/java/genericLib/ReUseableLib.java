@@ -16,8 +16,8 @@ public class ReUseableLib extends BaseClass{
 	public void navigateToHomePage(String browserName) throws InterruptedException
 	{
 		Map<String, String> mapData = util.readFromGoogleSheetForUniqueDataInMultiRowTable("EnvironmentalData","Environment","Prod");
-		//util.openBrowser(browserName);
-		util.openHeadlessBrowser(browserName);
+		util.openBrowser(browserName);
+		//util.openHeadlessBrowser(browserName);
 		util.maximizeBrowser();
 		util.navigateTo(mapData.get("URL"));
 		util.setImplicitWait(5);
