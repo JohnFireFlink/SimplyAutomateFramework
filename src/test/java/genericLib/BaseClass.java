@@ -39,13 +39,20 @@ public class BaseClass {
 	{
 		if(res.getStatus()==ITestResult.FAILURE)
 		{
+			if (util.driver!=null) 
+			{
 			TakesScreenshot tss=(TakesScreenshot) util.driver;
 			String src = tss.getScreenshotAs(OutputType.BASE64);
 			test.addScreenCaptureFromBase64String(src);
+			}
 		}
 		if(res.getStatus()==ITestResult.SUCCESS)
 		{
-			util.closeBrowser();
+			if (util.driver!=null) 
+			{
+				util.closeBrowser();
+			}
+			
 		}
 		
 	}

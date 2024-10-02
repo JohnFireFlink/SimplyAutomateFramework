@@ -2,9 +2,13 @@ package genericLib;
 
 import java.time.Duration;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Random;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -23,6 +27,10 @@ import org.testng.Reporter;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+
 public class Utilities {
 
 	WebDriver driver;
@@ -37,7 +45,7 @@ public class Utilities {
 
 	public void setDelayBtwnSteps(int seconds)
 	{
-		delay=seconds;
+		delay=seconds*1000;
 	}
 
 	//NLP's
@@ -428,4 +436,178 @@ public class Utilities {
 		
 		return str;
 	}
+	
+	public Map<String, String> readFromGoogleSheetForUniqueDataInMultiRowTable(String sheetName, String colHeaderName, String uniqueData)
+	{
+		
+		Map<String, String> mapData=new HashMap<String, String>();
+		
+		try 
+		{
+			String range = "A1:Z500";
+			String sheetRange=sheetName+"!"+range;
+			String sheetURL="https://sheets.googleapis.com/v4/spreadsheets/1L_UGXFiDToLdsNHYagCUSfS6nJt8TY0GCRPKNF1ZBE0/values/"+sheetRange;
+			RestAssured.baseURI=sheetURL;
+			RequestSpecification request = RestAssured.given();
+			Response response = request.header("X-goog-api-key", "AIzaSyB5amEzIeIAiK8_TLjZKwXzQS6g0XvR4Ik").get();
+			String str = response.getBody().asString();
+			JSONObject jsonObj = new JSONObject(str);
+			
+			List<ArrayList<String>> data = (ArrayList<ArrayList<String>>)jsonObj.toMap().get("values");
+			ArrayList<String> headerRow = data.get(0);
+			int i=0;
+			int j=0;
+			for (String header : headerRow) 
+			{	
+				if(header.equals(colHeaderName))
+				{
+					break;
+				}
+				i++;
+			}
+			if(i==headerRow.size())
+			{
+				throw new NullPointerException(); 
+			}
+			for (ArrayList<String> aList : data) 
+			{
+				String val =  aList.get(i);
+				
+				if(val.equals(uniqueData))
+				{
+					break;
+				}
+				j++;
+			}
+			if(j==data.size())
+			{
+				throw new IndexOutOfBoundsException(); 
+			}
+			ArrayList<String> rowData = data.get(j);
+			if(rowData.size()!=headerRow.size())
+			{
+				int loop = headerRow.size()-rowData.size();
+				
+				for (int k = 0; k < loop; k++) 
+				{
+					rowData.add("");
+				}	
+			}
+			for (int k = 0; k < headerRow.size() ; k++) 
+			{
+				mapData.put(headerRow.get(k), rowData.get(k));
+			}
+			
+			Reporter.log("MapData : "+mapData.toString(), true);
+			test.log(Status.PASS, "MapData : "+mapData.toString());
+
+		} 
+		catch (NullPointerException e) 
+		{
+			Reporter.log("No header found", true);
+			test.log(Status.FAIL, "No header found");
+			throw e;
+		}
+		catch (IndexOutOfBoundsException e) 
+		{
+			Reporter.log("Unique Data not found", true);
+			test.log(Status.FAIL, "Unique Data not found");
+			throw e;
+		}
+		catch (Exception e) 
+		{
+			Reporter.log("Failed to read data - Exception : "+e, true);
+			test.log(Status.FAIL, "Failed to read data - Exception : "+e);
+			throw e;
+		}
+		return mapData;
+	}
+	
+	public Map<String,String> readFromGoogleSheetForUniqueDataInSingleRowTable(String sheetName, String uniqueData)
+	{
+		Boolean loop=true;
+		int uniqueDataIndex=0;
+		Map<String,String> mapData=new HashMap<String, String>();
+		
+		try 
+		{
+			String range = "A1:Z500";
+			String sheetRange=sheetName+"!"+range;
+			String sheetURL="https://sheets.googleapis.com/v4/spreadsheets/1L_UGXFiDToLdsNHYagCUSfS6nJt8TY0GCRPKNF1ZBE0/values/"+sheetRange;
+			RestAssured.baseURI=sheetURL;
+			RequestSpecification request = RestAssured.given();
+			Response response = request.header("X-goog-api-key", "AIzaSyB5amEzIeIAiK8_TLjZKwXzQS6g0XvR4Ik").get();
+			String str = response.getBody().asString();
+			JSONObject jsonObj = new JSONObject(str);
+
+			JSONArray data = (JSONArray) jsonObj.get("values");
+			for (int i = 0; i < data.length(); i++) 
+			{
+				JSONArray array = (JSONArray) data.get(i);
+				if(array.length()==0)
+				{
+					data.remove(i);
+				}
+			}
+			int num=0;
+			for (int i = 0; i < data.length(); i++) 
+			{
+				if(loop==true)
+				{
+					JSONArray array = (JSONArray) data.get(i);
+					for (int j = 0; j < array.length(); j++) 
+					{
+						if (array.get(j).equals(uniqueData)) 
+						{
+							uniqueDataIndex=i;
+							loop=false;
+							num=0;
+							break;
+						}
+					}
+					num++;
+				}
+				else
+				{
+					break;
+				}
+			}
+			if(num==data.length())
+			{
+				return mapData;
+			}
+			else {
+
+				JSONArray val=(JSONArray) data.get(uniqueDataIndex);
+				JSONArray key=(JSONArray) data.get(uniqueDataIndex-1);
+				
+				if(key.length()!=val.length())
+				{
+					int missData = key.length()-val.length();
+					int lastIndex = key.length()-1;
+					
+					for (int i = missData; i > 0; i--) 
+					{
+						val.put(lastIndex, "");
+						lastIndex--;
+					}
+				}
+				for (int i = 0; i < key.length(); i++) 
+				{
+					mapData.put((String)key.get(i), (String)val.get(i));
+				}
+			}
+			Reporter.log("MapData : "+mapData.toString(), true);
+			test.log(Status.PASS, "MapData : "+mapData.toString());
+		} 
+		catch (Exception e) 
+		{
+			Reporter.log("Failed to read data - Exception : "+e, true);
+			test.log(Status.FAIL, "Failed to read data - Exception : "+e);
+			throw e;
+		}
+		
+		return mapData;
+	}
+
 }

@@ -1,5 +1,7 @@
 package webTestCases;
 
+import java.util.Map;
+
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
@@ -10,13 +12,14 @@ public class Module2_Login extends ReUseableLib {
 	@Test
 	public void tc004_VerifyLoginWithValidCredentials() throws InterruptedException
 	{
+		Map<String, String> mapData = util.readFromGoogleSheetForUniqueDataInSingleRowTable("Login", "tc004");
 		test=extent.createTest(Reporter.getCurrentTestResult().getName());
 		util.generateReport(test);
-		util.setDelayBtwnSteps(1000);
+		util.setDelayBtwnSteps(1);
 		
 		navigateToLoginPage("Chrome");
-		util.EnterInto(lp.emailTF(), "mkar@gmail.com");
-		util.EnterInto(lp.pwdTF(), "Ka@12345");
+		util.EnterInto(lp.emailTF(), mapData.get("Email"));
+		util.EnterInto(lp.pwdTF(), mapData.get("Password"));
 		util.clickOn(lp.logInBtn());
 		util.verifyIfDisplayed(hp.logoutLink());
 	}
@@ -24,13 +27,14 @@ public class Module2_Login extends ReUseableLib {
 	@Test
 	public void tc005_VerifyLoginWithInValidCredentials() throws InterruptedException
 	{
+		Map<String, String> mapData = util.readFromGoogleSheetForUniqueDataInSingleRowTable("Login", "tc005");
 		test=extent.createTest(Reporter.getCurrentTestResult().getName());
 		util.generateReport(test);
-		util.setDelayBtwnSteps(1000);
+		util.setDelayBtwnSteps(1);
 		
 		navigateToLoginPage("FireFox");
-		util.EnterInto(lp.emailTF(), "mkar@gmail.com");
-		util.EnterInto(lp.pwdTF(), "Ka@123456");
+		util.EnterInto(lp.emailTF(), mapData.get("Email"));
+		util.EnterInto(lp.pwdTF(), mapData.get("InvalidPwd"));
 		util.clickOn(lp.logInBtn());
 		util.verifyIfDisplayed(lp.IncorrectCredMsg());
 	}
@@ -40,7 +44,7 @@ public class Module2_Login extends ReUseableLib {
 	{
 		test=extent.createTest(Reporter.getCurrentTestResult().getName());
 		util.generateReport(test);
-		util.setDelayBtwnSteps(1000);
+		util.setDelayBtwnSteps(1);
 		
 		navigateToLoginPage("Edge");
 		util.clickOn(lp.logInBtn());

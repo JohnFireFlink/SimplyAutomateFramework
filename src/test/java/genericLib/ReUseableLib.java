@@ -3,6 +3,7 @@ package genericLib;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.Map;
 
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -14,34 +15,25 @@ public class ReUseableLib extends BaseClass{
 	
 	public void navigateToHomePage(String browserName) throws InterruptedException
 	{
+		Map<String, String> mapData = util.readFromGoogleSheetForUniqueDataInMultiRowTable("EnvironmentalData","Environment","Prod");
 		//util.openBrowser(browserName);
 		util.openHeadlessBrowser(browserName);
 		util.maximizeBrowser();
-		util.navigateTo("https://demowebshop.tricentis.com/");
+		util.navigateTo(mapData.get("URL"));
 		util.setImplicitWait(5);
 		util.verifyIfDisplayed(hp.registerLink());
 	}
 	
 	public void navigateToRegisterPage(String browserName) throws InterruptedException
 	{
-		//util.openBrowser(browserName);
-		util.openHeadlessBrowser(browserName);
-		util.maximizeBrowser();
-		util.navigateTo("https://demowebshop.tricentis.com/");
-		util.setImplicitWait(5);
-		util.verifyIfDisplayed(hp.registerLink());
+		navigateToHomePage(browserName);
 		util.clickOn(hp.registerLink());
 		util.verifyIfDisplayed(rp.registerTxt());
 	}
 	
 	public void navigateToLoginPage(String browserName) throws InterruptedException
 	{
-		//util.openBrowser(browserName);
-		util.openHeadlessBrowser(browserName);
-		util.maximizeBrowser();
-		util.navigateTo("https://demowebshop.tricentis.com/");
-		util.setImplicitWait(5);
-		util.verifyIfDisplayed(hp.registerLink());
+		navigateToHomePage(browserName);
 		util.clickOn(hp.logInLink());
 		util.verifyIfDisplayed(lp.WelcomeTxt());
 	}
@@ -74,6 +66,7 @@ public class ReUseableLib extends BaseClass{
 				strAr[i][j] = sh1.getRow(i+1).getCell(j).getStringCellValue();	
 			}
 		}
+		wb.close();
 		return strAr;
 	}
 }
