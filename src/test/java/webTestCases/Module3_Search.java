@@ -3,7 +3,6 @@ package webTestCases;
 import java.util.ArrayList;
 import java.util.Map;
 
-import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import genericLib.ReUseableLib;
@@ -13,9 +12,8 @@ public class Module3_Search extends ReUseableLib {
 	@Test
 	public void tc007_VerifySearchWithValidData() throws InterruptedException
 	{
-		test=extent.createTest(Reporter.getCurrentTestResult().getName());
+		generateReport();
 		Map<String, String> mapData = util.readFromGoogleSheetForUniqueDataInSingleRowTable("Search", "tc007");
-		util.generateReport(test);
 		util.setDelayBtwnSteps(1);
 		
 		loginAsUser("Chrome",map.get("URL"));

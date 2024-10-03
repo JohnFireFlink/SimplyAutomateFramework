@@ -13,7 +13,9 @@ public class HomePage
 	public ArrayList<Object> registerLink()
 	{
 		ArrayList<Object> ele=new ArrayList<Object>();
+		//Add Element name
 		ele.add("Register Link");
+		//Add Element locator
 		ele.add(By.className("ico-register"));	
 		return ele;
 	}

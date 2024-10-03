@@ -5,10 +5,11 @@
     <classes>
       <class name="webTestCases.Module1_Registration">
         <methods>
-          <include name="testOver"/>
+          <include name="updateReport"/>
           <include name="tc001_VerifyRegistrationWithValidData"/>
-          <include name="upDateReport"/>
-          <include name="setUp"/>
+          <include name="testOver"/>
+          <include name="createReport"/>
+          <include name="setEnvironment"/>
         </methods>
       </class> <!-- webTestCases.Module1_Registration -->
     </classes>

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Oct 02 16:45:46 IST 2024</td>
+<td>Started on:</td><td>Thu Oct 03 15:17:33 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>1 seconds (1988 ms)</td>
+<tr><td>Total time:</td><td>78 seconds (78415 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -77,76 +77,86 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='webTestCases.Module1_Registration.tc001_VerifyRegistrationWithValidData()'><b>tc001_VerifyRegistrationWithValidData</b><br>Test class: webTestCases.Module1_Registration<br/>
-<a href="#Output-2096842550" onClick='toggleBox("Output-2096842550", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-65168514" onClick='toggleBox("Output-65168514", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-2096842550" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2096842550">
+<a href="#Output-65168514" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-65168514">
 MapData : {DomainName=testdemouser, FirstName=Karthick, TCNO=tc001, LastName=TestUser, Password=Ka@12345}<br/>
-Failed to read data - Exception : java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because "this.test" is null<br/>
+Chrome browser launched<br/>
+Browser maximized<br/>
+Navigated to https://demowebshop.tricentis.com/<br/>
+Implicit wait set to 5 seconds<br/>
+Register Link is displayed<br/>
+Clicked on Register Link<br/>
+Register Text is displayed<br/>
+Clicked on Male Radio button<br/>
+Entered Karthick into FirstName TextField<br/>
+Entered TestUser into LastName TextField<br/>
+Random Number generated : 77886<br/>
+Entered testdemouser77886@gmail.com into Email TextField<br/>
+Entered Ka@12345 into Password TextField<br/>
+Entered Ka@12345 into Confirm Password TextField<br/>
+Clicked on Register button<br/>
+Registration Completed Msg is displayed<br/>
 </div>
 </td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)&quot; because &quot;this.test&quot; is null
-	at genericLib.Utilities.readFromGoogleSheetForUniqueDataInSingleRowTable(Utilities.java:606)
-	at webTestCases.Module1_Registration.tc001_VerifyRegistrationWithValidData(Module1_Registration.java:16)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2096842550", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2096842550'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)&quot; because &quot;this.test&quot; is null
-	at genericLib.Utilities.readFromGoogleSheetForUniqueDataInSingleRowTable(Utilities.java:606)
-	at webTestCases.Module1_Registration.tc001_VerifyRegistrationWithValidData(Module1_Registration.java:16)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>1</td>
-<td>webTestCases.Module1_Registration@3cce5371</td></tr>
+<td></td>
+<td>24</td>
+<td>webTestCases.Module1_Registration@4bdeaabb</td></tr>
+<tr>
+<td title='webTestCases.Module1_Registration.tc003_VerifyRegistrationWithAlreadyRegisteredData()'><b>tc003_VerifyRegistrationWithAlreadyRegisteredData</b><br>Test class: webTestCases.Module1_Registration<br/>
+<a href="#Output-53688719" onClick='toggleBox("Output-53688719", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-53688719" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-53688719">
+MapData : {RegisteredEmail=mkar@gmail.com, FirstName=Karthick, TCNO=tc003, LastName=TestUser, Password=Ka@12345}<br/>
+Chrome browser launched<br/>
+Browser maximized<br/>
+Navigated to https://demowebshop.tricentis.com/<br/>
+Implicit wait set to 5 seconds<br/>
+Register Link is displayed<br/>
+Clicked on Register Link<br/>
+Register Text is displayed<br/>
+Clicked on Male Radio button<br/>
+Entered Karthick into FirstName TextField<br/>
+Entered TestUser into LastName TextField<br/>
+Entered mkar@gmail.com into Email TextField<br/>
+Entered Ka@12345 into Password TextField<br/>
+Entered Ka@12345 into Confirm Password TextField<br/>
+Clicked on Register button<br/>
+Already exists error Msg is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>24</td>
+<td>webTestCases.Module1_Registration@4bdeaabb</td></tr>
+<tr>
+<td title='webTestCases.Module1_Registration.tc002_VerifyRegistrationWithInValidEmail()'><b>tc002_VerifyRegistrationWithInValidEmail</b><br>Test class: webTestCases.Module1_Registration<br/>
+<a href="#Output-1040015904" onClick='toggleBox("Output-1040015904", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1040015904" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1040015904">
+MapData : {InvalidEmail=testdemouser, FirstName=Karthick, TCNO=tc002, LastName=TestUser, Password=Ka@12345}<br/>
+Firefox browser launched<br/>
+Browser maximized<br/>
+Navigated to https://demowebshop.tricentis.com/<br/>
+Implicit wait set to 5 seconds<br/>
+Register Link is displayed<br/>
+Clicked on Register Link<br/>
+Register Text is displayed<br/>
+Clicked on Male Radio button<br/>
+Entered Karthick into FirstName TextField<br/>
+Entered TestUser into LastName TextField<br/>
+Entered testdemouser into Email TextField<br/>
+Entered Ka@12345 into Password TextField<br/>
+Entered Ka@12345 into Confirm Password TextField<br/>
+Clicked on Register button<br/>
+Wrong Email Text is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>webTestCases.Module1_Registration@4bdeaabb</td></tr>
 </table><p>
 </body>
 </html>

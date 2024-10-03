@@ -12,13 +12,12 @@ public class Module1_Registration extends ReUseableLib {
 	@Test
 	public void tc001_VerifyRegistrationWithValidData() throws InterruptedException
 	{
-		test=extent.createTest(Reporter.getCurrentTestResult().getName());
+		generateReport();
 		Map<String, String> mapData = util.readFromGoogleSheetForUniqueDataInSingleRowTable("Registration", "tc001");
-		util.generateReport(test);
 		util.setDelayBtwnSteps(1);
-
+		Reporter.log(os);
 		navigateToRegisterPage("Chrome",map.get("URL"));
-
+		
 		util.clickOn(rp.genderRadioBtn("Male"));
 		util.EnterInto(rp.firstNameTF(), mapData.get("FirstName"));
 		util.EnterInto(rp.lastNameTF(), mapData.get("LastName"));
@@ -33,9 +32,8 @@ public class Module1_Registration extends ReUseableLib {
 	@Test
 	public void tc002_VerifyRegistrationWithInValidEmail() throws InterruptedException
 	{
-		test=extent.createTest(Reporter.getCurrentTestResult().getName());
+		generateReport();
 		Map<String, String> mapData = util.readFromGoogleSheetForUniqueDataInSingleRowTable("Registration", "tc002");
-		util.generateReport(test);
 		util.setDelayBtwnSteps(1);
 
 		navigateToRegisterPage("FireFox",map.get("URL"));
@@ -54,9 +52,8 @@ public class Module1_Registration extends ReUseableLib {
 	@Test
 	public void tc003_VerifyRegistrationWithAlreadyRegisteredData() throws InterruptedException
 	{
-		test=extent.createTest(Reporter.getCurrentTestResult().getName());
+		generateReport();
 		Map<String, String> mapData = util.readFromGoogleSheetForUniqueDataInSingleRowTable("Registration", "tc003");
-		util.generateReport(test);
 		util.setDelayBtwnSteps(1);
 		
 		navigateToRegisterPage("Chrome",map.get("URL"));
