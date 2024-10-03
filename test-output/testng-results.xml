@@ -1,187 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[MapData : {Environment=Prod, URL=https://demowebshop.tricentis.com/}]]>
-    </line>
-    <line>
-      <![CDATA[MapData : {DomainName=testdemouser, FirstName=Karthick, TCNO=tc001, LastName=TestUser, Password=Ka@12345}]]>
-    </line>
-    <line>
       <![CDATA[Chrome browser launched]]>
     </line>
     <line>
       <![CDATA[Browser maximized]]>
     </line>
     <line>
-      <![CDATA[Navigated to https://demowebshop.tricentis.com/]]>
+      <![CDATA[Navigated to https://google.com/]]>
     </line>
     <line>
       <![CDATA[Implicit wait set to 5 seconds]]>
     </line>
     <line>
-      <![CDATA[Register Link is displayed]]>
+      <![CDATA[Clicked on Gmail Link]]>
     </line>
     <line>
-      <![CDATA[Clicked on Register Link]]>
-    </line>
-    <line>
-      <![CDATA[Register Text is displayed]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on Male Radio button]]>
-    </line>
-    <line>
-      <![CDATA[Entered Karthick into FirstName TextField]]>
-    </line>
-    <line>
-      <![CDATA[Entered TestUser into LastName TextField]]>
-    </line>
-    <line>
-      <![CDATA[Random Number generated : 77886]]>
-    </line>
-    <line>
-      <![CDATA[Entered testdemouser77886@gmail.com into Email TextField]]>
-    </line>
-    <line>
-      <![CDATA[Entered Ka@12345 into Password TextField]]>
-    </line>
-    <line>
-      <![CDATA[Entered Ka@12345 into Confirm Password TextField]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on Register button]]>
-    </line>
-    <line>
-      <![CDATA[Registration Completed Msg is displayed]]>
-    </line>
-    <line>
-      <![CDATA[Browser closed]]>
-    </line>
-    <line>
-      <![CDATA[MapData : {InvalidEmail=testdemouser, FirstName=Karthick, TCNO=tc002, LastName=TestUser, Password=Ka@12345}]]>
-    </line>
-    <line>
-      <![CDATA[Firefox browser launched]]>
-    </line>
-    <line>
-      <![CDATA[Browser maximized]]>
-    </line>
-    <line>
-      <![CDATA[Navigated to https://demowebshop.tricentis.com/]]>
-    </line>
-    <line>
-      <![CDATA[Implicit wait set to 5 seconds]]>
-    </line>
-    <line>
-      <![CDATA[Register Link is displayed]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on Register Link]]>
-    </line>
-    <line>
-      <![CDATA[Register Text is displayed]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on Male Radio button]]>
-    </line>
-    <line>
-      <![CDATA[Entered Karthick into FirstName TextField]]>
-    </line>
-    <line>
-      <![CDATA[Entered TestUser into LastName TextField]]>
-    </line>
-    <line>
-      <![CDATA[Entered testdemouser into Email TextField]]>
-    </line>
-    <line>
-      <![CDATA[Entered Ka@12345 into Password TextField]]>
-    </line>
-    <line>
-      <![CDATA[Entered Ka@12345 into Confirm Password TextField]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on Register button]]>
-    </line>
-    <line>
-      <![CDATA[Wrong Email Text is displayed]]>
-    </line>
-    <line>
-      <![CDATA[Browser closed]]>
-    </line>
-    <line>
-      <![CDATA[MapData : {RegisteredEmail=mkar@gmail.com, FirstName=Karthick, TCNO=tc003, LastName=TestUser, Password=Ka@12345}]]>
-    </line>
-    <line>
-      <![CDATA[Chrome browser launched]]>
-    </line>
-    <line>
-      <![CDATA[Browser maximized]]>
-    </line>
-    <line>
-      <![CDATA[Navigated to https://demowebshop.tricentis.com/]]>
-    </line>
-    <line>
-      <![CDATA[Implicit wait set to 5 seconds]]>
-    </line>
-    <line>
-      <![CDATA[Register Link is displayed]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on Register Link]]>
-    </line>
-    <line>
-      <![CDATA[Register Text is displayed]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on Male Radio button]]>
-    </line>
-    <line>
-      <![CDATA[Entered Karthick into FirstName TextField]]>
-    </line>
-    <line>
-      <![CDATA[Entered TestUser into LastName TextField]]>
-    </line>
-    <line>
-      <![CDATA[Entered mkar@gmail.com into Email TextField]]>
-    </line>
-    <line>
-      <![CDATA[Entered Ka@12345 into Password TextField]]>
-    </line>
-    <line>
-      <![CDATA[Entered Ka@12345 into Confirm Password TextField]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on Register button]]>
-    </line>
-    <line>
-      <![CDATA[Already exists error Msg is displayed]]>
+      <![CDATA[Create Account button is displayed]]>
     </line>
     <line>
       <![CDATA[Browser closed]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-10-03T15:17:33 IST" name="Default suite" finished-at="2024-10-03T15:18:52 IST" duration-ms="78415">
+  <suite started-at="2024-10-03T19:03:27 IST" name="Default suite" finished-at="2024-10-03T19:03:38 IST" duration-ms="10926">
     <groups>
     </groups>
-    <test started-at="2024-10-03T15:17:33 IST" name="Default test" finished-at="2024-10-03T15:18:52 IST" duration-ms="78415">
-      <class name="webTestCases.Module1_Registration">
-        <test-method is-config="true" signature="createReport()[pri:0, instance:webTestCases.Module1_Registration@4bdeaabb]" started-at="2024-10-03T15:17:33 IST" name="createReport" finished-at="2024-10-03T15:17:33 IST" duration-ms="285" status="PASS">
+    <test started-at="2024-10-03T19:03:27 IST" name="Default test" finished-at="2024-10-03T19:03:38 IST" duration-ms="10926">
+      <class name="webTestCases.Module1">
+        <test-method is-config="true" signature="setUpReport()[pri:0, instance:webTestCases.Module1@5a59ca5e]" started-at="2024-10-03T19:03:27 IST" name="setUpReport" finished-at="2024-10-03T19:03:27 IST" duration-ms="151" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createReport -->
-        <test-method is-config="true" signature="setEnvironment()[pri:0, instance:webTestCases.Module1_Registration@4bdeaabb]" started-at="2024-10-03T15:17:33 IST" name="setEnvironment" finished-at="2024-10-03T15:17:36 IST" duration-ms="3066" status="PASS">
+        </test-method> <!-- setUpReport -->
+        <test-method is-config="true" signature="setEnvironment()[pri:0, instance:webTestCases.Module1@5a59ca5e]" started-at="2024-10-03T19:03:27 IST" name="setEnvironment" finished-at="2024-10-03T19:03:27 IST" duration-ms="1" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[MapData : {Environment=Prod, URL=https://demowebshop.tricentis.com/}]]>
-            </line>
           </reporter-output>
         </test-method> <!-- setEnvironment -->
-        <test-method signature="tc001_VerifyRegistrationWithValidData()[pri:0, instance:webTestCases.Module1_Registration@4bdeaabb]" started-at="2024-10-03T15:17:36 IST" name="tc001_VerifyRegistrationWithValidData" finished-at="2024-10-03T15:18:01 IST" duration-ms="24428" status="PASS">
+        <test-method signature="tc001()[pri:0, instance:webTestCases.Module1@5a59ca5e]" started-at="2024-10-03T19:03:27 IST" name="tc001" finished-at="2024-10-03T19:03:38 IST" duration-ms="10726" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[MapData : {DomainName=testdemouser, FirstName=Karthick, TCNO=tc001, LastName=TestUser, Password=Ka@12345}]]>
-            </line>
             <line>
               <![CDATA[Chrome browser launched]]>
             </line>
@@ -189,54 +45,24 @@
               <![CDATA[Browser maximized]]>
             </line>
             <line>
-              <![CDATA[Navigated to https://demowebshop.tricentis.com/]]>
+              <![CDATA[Navigated to https://google.com/]]>
             </line>
             <line>
               <![CDATA[Implicit wait set to 5 seconds]]>
             </line>
             <line>
-              <![CDATA[Register Link is displayed]]>
+              <![CDATA[Clicked on Gmail Link]]>
             </line>
             <line>
-              <![CDATA[Clicked on Register Link]]>
-            </line>
-            <line>
-              <![CDATA[Register Text is displayed]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on Male Radio button]]>
-            </line>
-            <line>
-              <![CDATA[Entered Karthick into FirstName TextField]]>
-            </line>
-            <line>
-              <![CDATA[Entered TestUser into LastName TextField]]>
-            </line>
-            <line>
-              <![CDATA[Random Number generated : 77886]]>
-            </line>
-            <line>
-              <![CDATA[Entered testdemouser77886@gmail.com into Email TextField]]>
-            </line>
-            <line>
-              <![CDATA[Entered Ka@12345 into Password TextField]]>
-            </line>
-            <line>
-              <![CDATA[Entered Ka@12345 into Confirm Password TextField]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on Register button]]>
-            </line>
-            <line>
-              <![CDATA[Registration Completed Msg is displayed]]>
+              <![CDATA[Create Account button is displayed]]>
             </line>
           </reporter-output>
-        </test-method> <!-- tc001_VerifyRegistrationWithValidData -->
-        <test-method is-config="true" signature="testOver(org.testng.ITestResult)[pri:0, instance:webTestCases.Module1_Registration@4bdeaabb]" started-at="2024-10-03T15:18:01 IST" name="testOver" finished-at="2024-10-03T15:18:01 IST" duration-ms="387" status="PASS">
+        </test-method> <!-- tc001 -->
+        <test-method is-config="true" signature="testOver(org.testng.ITestResult)[pri:0, instance:webTestCases.Module1@5a59ca5e]" started-at="2024-10-03T19:03:38 IST" name="testOver" finished-at="2024-10-03T19:03:38 IST" duration-ms="167" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=tc001_VerifyRegistrationWithValidData status=SUCCESS method=Module1_Registration.tc001_VerifyRegistrationWithValidData()[pri:0, instance:webTestCases.Module1_Registration@4bdeaabb] output=MapData : {DomainName=testdemouser, FirstName=Karthick, TCNO=tc001, LastName=TestUser, Password=Ka@12345}]]]>
+                <![CDATA[[TestResult name=tc001 status=SUCCESS method=Module1.tc001()[pri:0, instance:webTestCases.Module1@5a59ca5e] output=Chrome browser launched]]]>
               </value>
             </param>
           </params>
@@ -246,143 +72,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- testOver -->
-        <test-method signature="tc002_VerifyRegistrationWithInValidEmail()[pri:0, instance:webTestCases.Module1_Registration@4bdeaabb]" started-at="2024-10-03T15:18:01 IST" name="tc002_VerifyRegistrationWithInValidEmail" finished-at="2024-10-03T15:18:25 IST" duration-ms="23706" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[MapData : {InvalidEmail=testdemouser, FirstName=Karthick, TCNO=tc002, LastName=TestUser, Password=Ka@12345}]]>
-            </line>
-            <line>
-              <![CDATA[Firefox browser launched]]>
-            </line>
-            <line>
-              <![CDATA[Browser maximized]]>
-            </line>
-            <line>
-              <![CDATA[Navigated to https://demowebshop.tricentis.com/]]>
-            </line>
-            <line>
-              <![CDATA[Implicit wait set to 5 seconds]]>
-            </line>
-            <line>
-              <![CDATA[Register Link is displayed]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on Register Link]]>
-            </line>
-            <line>
-              <![CDATA[Register Text is displayed]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on Male Radio button]]>
-            </line>
-            <line>
-              <![CDATA[Entered Karthick into FirstName TextField]]>
-            </line>
-            <line>
-              <![CDATA[Entered TestUser into LastName TextField]]>
-            </line>
-            <line>
-              <![CDATA[Entered testdemouser into Email TextField]]>
-            </line>
-            <line>
-              <![CDATA[Entered Ka@12345 into Password TextField]]>
-            </line>
-            <line>
-              <![CDATA[Entered Ka@12345 into Confirm Password TextField]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on Register button]]>
-            </line>
-            <line>
-              <![CDATA[Wrong Email Text is displayed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- tc002_VerifyRegistrationWithInValidEmail -->
-        <test-method is-config="true" signature="testOver(org.testng.ITestResult)[pri:0, instance:webTestCases.Module1_Registration@4bdeaabb]" started-at="2024-10-03T15:18:25 IST" name="testOver" finished-at="2024-10-03T15:18:27 IST" duration-ms="1948" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=tc002_VerifyRegistrationWithInValidEmail status=SUCCESS method=Module1_Registration.tc002_VerifyRegistrationWithInValidEmail()[pri:0, instance:webTestCases.Module1_Registration@4bdeaabb] output=MapData : {InvalidEmail=testdemouser, FirstName=Karthick, TCNO=tc002, LastName=TestUser, Password=Ka@12345}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Browser closed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testOver -->
-        <test-method signature="tc003_VerifyRegistrationWithAlreadyRegisteredData()[pri:0, instance:webTestCases.Module1_Registration@4bdeaabb]" started-at="2024-10-03T15:18:27 IST" name="tc003_VerifyRegistrationWithAlreadyRegisteredData" finished-at="2024-10-03T15:18:51 IST" duration-ms="24343" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[MapData : {RegisteredEmail=mkar@gmail.com, FirstName=Karthick, TCNO=tc003, LastName=TestUser, Password=Ka@12345}]]>
-            </line>
-            <line>
-              <![CDATA[Chrome browser launched]]>
-            </line>
-            <line>
-              <![CDATA[Browser maximized]]>
-            </line>
-            <line>
-              <![CDATA[Navigated to https://demowebshop.tricentis.com/]]>
-            </line>
-            <line>
-              <![CDATA[Implicit wait set to 5 seconds]]>
-            </line>
-            <line>
-              <![CDATA[Register Link is displayed]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on Register Link]]>
-            </line>
-            <line>
-              <![CDATA[Register Text is displayed]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on Male Radio button]]>
-            </line>
-            <line>
-              <![CDATA[Entered Karthick into FirstName TextField]]>
-            </line>
-            <line>
-              <![CDATA[Entered TestUser into LastName TextField]]>
-            </line>
-            <line>
-              <![CDATA[Entered mkar@gmail.com into Email TextField]]>
-            </line>
-            <line>
-              <![CDATA[Entered Ka@12345 into Password TextField]]>
-            </line>
-            <line>
-              <![CDATA[Entered Ka@12345 into Confirm Password TextField]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on Register button]]>
-            </line>
-            <line>
-              <![CDATA[Already exists error Msg is displayed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- tc003_VerifyRegistrationWithAlreadyRegisteredData -->
-        <test-method is-config="true" signature="testOver(org.testng.ITestResult)[pri:0, instance:webTestCases.Module1_Registration@4bdeaabb]" started-at="2024-10-03T15:18:51 IST" name="testOver" finished-at="2024-10-03T15:18:52 IST" duration-ms="457" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=tc003_VerifyRegistrationWithAlreadyRegisteredData status=SUCCESS method=Module1_Registration.tc003_VerifyRegistrationWithAlreadyRegisteredData()[pri:0, instance:webTestCases.Module1_Registration@4bdeaabb] output=MapData : {RegisteredEmail=mkar@gmail.com, FirstName=Karthick, TCNO=tc003, LastName=TestUser, Password=Ka@12345}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Browser closed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testOver -->
-        <test-method is-config="true" signature="updateReport()[pri:0, instance:webTestCases.Module1_Registration@4bdeaabb]" started-at="2024-10-03T15:18:52 IST" name="updateReport" finished-at="2024-10-03T15:18:53 IST" duration-ms="1169" status="PASS">
+        <test-method is-config="true" signature="updateReport()[pri:0, instance:webTestCases.Module1@5a59ca5e]" started-at="2024-10-03T19:03:38 IST" name="updateReport" finished-at="2024-10-03T19:03:39 IST" duration-ms="415" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateReport -->
-      </class> <!-- webTestCases.Module1_Registration -->
+      </class> <!-- webTestCases.Module1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

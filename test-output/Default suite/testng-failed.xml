@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="webTestCases.Module1_Registration">
+      <class name="webTestCases.Module1">
         <methods>
+          <include name="setUpReport"/>
           <include name="updateReport"/>
-          <include name="tc001_VerifyRegistrationWithValidData"/>
           <include name="testOver"/>
-          <include name="createReport"/>
           <include name="setEnvironment"/>
+          <include name="tc001"/>
         </methods>
-      </class> <!-- webTestCases.Module1_Registration -->
+      </class> <!-- webTestCases.Module1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

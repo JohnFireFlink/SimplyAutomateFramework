@@ -9,7 +9,7 @@ public class TestRunner {
 	public static void main(String[] args) {
 		
 		testng=new TestNG();
-		testng.setTestClasses(new Class[] {Module1_Registration.class,Module2_Login.class,Module3_Search.class});
+		testng.setTestClasses(new Class[] {Module1.class,Module2.class});
 		testng.run();
 	}
 

@@ -15,9 +15,8 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
-import pomPages.HomePage;
-import pomPages.LoginPage;
-import pomPages.RegisterPage;
+import pomPages.DemoPage1;
+import pomPages.DemoPage2;
 
 public class BaseClass {
 	
@@ -29,9 +28,8 @@ public class BaseClass {
 	public String os=System.getProperty("os.name").toLowerCase();
 	
 	//Create Object if you are creating new pomPages to access the elements
-	public HomePage hp=new HomePage();
-	public LoginPage lp=new LoginPage();
-	public RegisterPage rp=new RegisterPage();
+	public DemoPage1 d1=new DemoPage1();
+	public DemoPage2 d2=new DemoPage2();
 	
 	public void generateReport()
 	{
@@ -40,7 +38,7 @@ public class BaseClass {
 	}
 	
 	@BeforeSuite
-	public void createReport()
+	public void setUpReport()
 	{
 		html = new ExtentSparkReporter("./target/Report.html");
 		extent = new ExtentReports();
@@ -50,8 +48,8 @@ public class BaseClass {
 	@BeforeClass
 	public void setEnvironment()
 	{
-		//If you want to change the url based on environment
-		map = util.readFromGoogleSheetForUniqueDataInMultiRowTable("EnvironmentalData","Environment","Prod");
+		//If you want to change the url based on environment, enable the code
+		//map = util.readFromGoogleSheetForUniqueDataInMultiRowTable("EnvironmentalData","Environment","Prod");
 	}
 	
 	@AfterMethod

@@ -49,9 +49,9 @@ public class Utilities {
 	
 	private JSONObject getGoogleSheetData(String sheetName)
 	{
-		String range = "A1:Z500";
-		String sheetID="1L_UGXFiDToLdsNHYagCUSfS6nJt8TY0GCRPKNF1ZBE0";
-		String apiKey="AIzaSyB5amEzIeIAiK8_TLjZKwXzQS6g0XvR4Ik";
+		String range = "A1:Z500";	//Increase range if required
+		String sheetID=""; 			//Enter your own Google SheetId
+		String apiKey=""; 			//Generate your GoogleSheet API key and enter the same
 		
 		String sheetRange=sheetName+"!"+range;
 		String sheetURL="https://sheets.googleapis.com/v4/spreadsheets/"+sheetID+"/values/"+sheetRange;
@@ -63,7 +63,35 @@ public class Utilities {
 		return jsonObj;
 	}
 
-	//NLP's
+
+//	Sample Code for adding new NLP:
+	
+//	public void demoNLP() throws InterruptedException
+//	{
+//		try 
+//		{
+//			Type your logic here...
+//			Reporter.log("Type your Pass message", true);
+//			if(test!=null)
+//			{
+//			test.log(Status.PASS, "Type your Pass message");
+//			}
+//		} 
+//		catch (Exception e) 
+//		{
+//			Reporter.log("Type your Fail message", true);
+//			if(test!=null)
+//			{
+//			test.log(Status.FAIL, "Type your Fail message - Exception : "+e);
+//			}
+//			throw e;
+//		}
+//
+//		Thread.sleep(delay);
+//	}
+	
+	
+//NLP's
 	
 	public void openBrowser(String browserName) throws InterruptedException
 	{
