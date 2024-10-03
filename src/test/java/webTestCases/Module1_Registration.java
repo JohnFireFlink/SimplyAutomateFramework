@@ -15,7 +15,7 @@ public class Module1_Registration extends ReUseableLib {
 		generateReport();
 		Map<String, String> mapData = util.readFromGoogleSheetForUniqueDataInSingleRowTable("Registration", "tc001");
 		util.setDelayBtwnSteps(1);
-		Reporter.log(os);
+		Reporter.log(os,true);
 		navigateToRegisterPage("Chrome",map.get("URL"));
 		
 		util.clickOn(rp.genderRadioBtn("Male"));
