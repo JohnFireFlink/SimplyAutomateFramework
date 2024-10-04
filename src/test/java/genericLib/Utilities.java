@@ -1428,18 +1428,18 @@ public class Utilities {
 		try 
 		{   
 			driver.findElement((By)ele.get(1)).sendKeys(filePath);
-			Reporter.log("Uploaded file : "+(String)ele.get(0), true);
+			Reporter.log("Uploaded file : "+filePath, true);
 			if(test!=null)
 			{
-			test.log(Status.PASS, "Uploaded file : "+(String)ele.get(0));
+			test.log(Status.PASS, "Uploaded file : "+filePath);
 			}
 		} 
 		catch (Exception e) 
 		{
-			Reporter.log("Failed to upload file : "+(String)ele.get(0), true);
+			Reporter.log("Failed to upload file : "+filePath, true);
 			if(test!=null)
 			{
-			test.log(Status.FAIL, "Failed to upload file : "+(String)ele.get(0)+" - Exception : "+e);
+			test.log(Status.FAIL, "Failed to upload file : "+filePath+" - Exception : "+e);
 			}
 			throw e;
 		}
