@@ -13,7 +13,8 @@ public class Module1 extends ReUseableLib {
 		util.setDelayBtwnSteps(1);
 		
 		navigateToWebApp("Chrome","https://google.com/");
-		util.clickOn(d1.gmailLink());
+		util.mouseHoverOn(d1.gmailLink());
+		util.clickOnCurrentCursorPoint();
 		util.verifyIfDisplayed(d1.createAccBtn());
 	}
 	
@@ -23,6 +24,10 @@ public class Module1 extends ReUseableLib {
 		generateReport();
 		util.setDelayBtwnSteps(1);
 		
+		navigateToWebApp("Chrome","https://google.com/");
+		util.mouseHoverOn(d1.gmailLink());
+		util.clickOnCurrentCursorPoint();
+		util.switchTabIfUrlIs("noURL");
 	}
 
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Chrome browser launched]]>
@@ -14,7 +14,10 @@
       <![CDATA[Implicit wait set to 5 seconds]]>
     </line>
     <line>
-      <![CDATA[Clicked on Gmail Link]]>
+      <![CDATA[Mouse hovered on Gmail Link]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on current cursor point]]>
     </line>
     <line>
       <![CDATA[Create Account button is displayed]]>
@@ -22,21 +25,42 @@
     <line>
       <![CDATA[Browser closed]]>
     </line>
+    <line>
+      <![CDATA[Chrome browser launched]]>
+    </line>
+    <line>
+      <![CDATA[Browser maximized]]>
+    </line>
+    <line>
+      <![CDATA[Navigated to https://google.com/]]>
+    </line>
+    <line>
+      <![CDATA[Implicit wait set to 5 seconds]]>
+    </line>
+    <line>
+      <![CDATA[Mouse hovered on Gmail Link]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on current cursor point]]>
+    </line>
+    <line>
+      <![CDATA[Failed to switch : No Url found]]>
+    </line>
   </reporter-output>
-  <suite started-at="2024-10-03T19:03:27 IST" name="Default suite" finished-at="2024-10-03T19:03:38 IST" duration-ms="10926">
+  <suite started-at="2024-10-04T10:47:58 IST" name="Default suite" finished-at="2024-10-04T10:48:27 IST" duration-ms="28865">
     <groups>
     </groups>
-    <test started-at="2024-10-03T19:03:27 IST" name="Default test" finished-at="2024-10-03T19:03:38 IST" duration-ms="10926">
+    <test started-at="2024-10-04T10:47:58 IST" name="Default test" finished-at="2024-10-04T10:48:27 IST" duration-ms="28865">
       <class name="webTestCases.Module1">
-        <test-method is-config="true" signature="setUpReport()[pri:0, instance:webTestCases.Module1@5a59ca5e]" started-at="2024-10-03T19:03:27 IST" name="setUpReport" finished-at="2024-10-03T19:03:27 IST" duration-ms="151" status="PASS">
+        <test-method is-config="true" signature="setUpReport()[pri:0, instance:webTestCases.Module1@536f2a7e]" started-at="2024-10-04T10:47:58 IST" name="setUpReport" finished-at="2024-10-04T10:47:58 IST" duration-ms="341" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpReport -->
-        <test-method is-config="true" signature="setEnvironment()[pri:0, instance:webTestCases.Module1@5a59ca5e]" started-at="2024-10-03T19:03:27 IST" name="setEnvironment" finished-at="2024-10-03T19:03:27 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setEnvironment()[pri:0, instance:webTestCases.Module1@536f2a7e]" started-at="2024-10-04T10:47:58 IST" name="setEnvironment" finished-at="2024-10-04T10:47:58 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setEnvironment -->
-        <test-method signature="tc001()[pri:0, instance:webTestCases.Module1@5a59ca5e]" started-at="2024-10-03T19:03:27 IST" name="tc001" finished-at="2024-10-03T19:03:38 IST" duration-ms="10726" status="PASS">
+        <test-method signature="tc001()[pri:0, instance:webTestCases.Module1@536f2a7e]" started-at="2024-10-04T10:47:58 IST" name="tc001" finished-at="2024-10-04T10:48:14 IST" duration-ms="15772" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Chrome browser launched]]>
@@ -51,18 +75,21 @@
               <![CDATA[Implicit wait set to 5 seconds]]>
             </line>
             <line>
-              <![CDATA[Clicked on Gmail Link]]>
+              <![CDATA[Mouse hovered on Gmail Link]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on current cursor point]]>
             </line>
             <line>
               <![CDATA[Create Account button is displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- tc001 -->
-        <test-method is-config="true" signature="testOver(org.testng.ITestResult)[pri:0, instance:webTestCases.Module1@5a59ca5e]" started-at="2024-10-03T19:03:38 IST" name="testOver" finished-at="2024-10-03T19:03:38 IST" duration-ms="167" status="PASS">
+        <test-method is-config="true" signature="testOver(org.testng.ITestResult)[pri:0, instance:webTestCases.Module1@536f2a7e]" started-at="2024-10-04T10:48:14 IST" name="testOver" finished-at="2024-10-04T10:48:14 IST" duration-ms="334" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=tc001 status=SUCCESS method=Module1.tc001()[pri:0, instance:webTestCases.Module1@5a59ca5e] output=Chrome browser launched]]]>
+                <![CDATA[[TestResult name=tc001 status=SUCCESS method=Module1.tc001()[pri:0, instance:webTestCases.Module1@536f2a7e] output=Chrome browser launched]]]>
               </value>
             </param>
           </params>
@@ -72,7 +99,77 @@
             </line>
           </reporter-output>
         </test-method> <!-- testOver -->
-        <test-method is-config="true" signature="updateReport()[pri:0, instance:webTestCases.Module1@5a59ca5e]" started-at="2024-10-03T19:03:38 IST" name="updateReport" finished-at="2024-10-03T19:03:39 IST" duration-ms="415" status="PASS">
+        <test-method signature="tc002()[pri:0, instance:webTestCases.Module1@536f2a7e]" started-at="2024-10-04T10:48:14 IST" name="tc002" finished-at="2024-10-04T10:48:27 IST" duration-ms="12545" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at genericLib.Utilities.switchTabIfUrlIs(Utilities.java:1007)
+at webTestCases.Module1.tc002(Module1.java:30)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Chrome browser launched]]>
+            </line>
+            <line>
+              <![CDATA[Browser maximized]]>
+            </line>
+            <line>
+              <![CDATA[Navigated to https://google.com/]]>
+            </line>
+            <line>
+              <![CDATA[Implicit wait set to 5 seconds]]>
+            </line>
+            <line>
+              <![CDATA[Mouse hovered on Gmail Link]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on current cursor point]]>
+            </line>
+            <line>
+              <![CDATA[Failed to switch : No Url found]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc002 -->
+        <test-method is-config="true" signature="testOver(org.testng.ITestResult)[pri:0, instance:webTestCases.Module1@536f2a7e]" started-at="2024-10-04T10:48:27 IST" name="testOver" finished-at="2024-10-04T10:48:27 IST" duration-ms="149" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc002 status=FAILURE method=Module1.tc002()[pri:0, instance:webTestCases.Module1@536f2a7e] output=Chrome browser launched]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOver -->
+        <test-method is-config="true" signature="updateReport()[pri:0, instance:webTestCases.Module1@536f2a7e]" started-at="2024-10-04T10:48:27 IST" name="updateReport" finished-at="2024-10-04T10:48:28 IST" duration-ms="886" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateReport -->

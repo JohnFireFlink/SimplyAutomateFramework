@@ -5,11 +5,11 @@
     <classes>
       <class name="webTestCases.Module1">
         <methods>
-          <include name="setUpReport"/>
           <include name="updateReport"/>
+          <include name="setUpReport"/>
           <include name="testOver"/>
           <include name="setEnvironment"/>
-          <include name="tc001"/>
+          <include name="tc002"/>
         </methods>
       </class> <!-- webTestCases.Module1 -->
     </classes>

@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
+import java.util.Set;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -20,7 +21,9 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 
@@ -66,10 +69,12 @@ public class Utilities {
 
 //	Sample Code for adding new NLP:
 	
-//	public void demoNLP() throws InterruptedException
+//	public void demoNLP(ArrayList<Object> ele) throws InterruptedException
 //	{
 //		try 
-//		{
+//		{   
+//			Element = driver.findElement((By)ele.get(1));
+//			ElementName = (String)ele.get(0);
 //			Type your logic here...
 //			Reporter.log("Type your Pass message", true);
 //			if(test!=null)
@@ -266,6 +271,131 @@ public class Utilities {
 			if(test!=null)
 			{
 			test.log(Status.FAIL, "Failed to clicked on "+(String)ele.get(0)+" - Exception : "+e);
+			}
+			throw e;
+		}
+
+		Thread.sleep(delay);
+	}
+	
+	public void doubleClickOn(ArrayList<Object> ele) throws InterruptedException
+	{
+		try 
+		{
+			Actions act=new Actions(driver);
+			act.doubleClick(driver.findElement((By)ele.get(1))).perform();
+			Reporter.log("Double clicked on "+(String)ele.get(0), true);
+			if(test!=null)
+			{
+			test.log(Status.PASS, "Double clicked on "+(String)ele.get(0));
+			}
+		} 
+		catch (Exception e) 
+		{
+			Reporter.log("Failed to double click on "+(String)ele.get(0), true);
+			if(test!=null)
+			{
+			test.log(Status.FAIL, "Failed to double click on "+(String)ele.get(0)+" - Exception : "+e);
+			}
+			throw e;
+		}
+
+		Thread.sleep(delay);
+	}
+	
+	public void rightClickOn(ArrayList<Object> ele) throws InterruptedException
+	{
+		try 
+		{
+			Actions act=new Actions(driver);
+			act.contextClick(driver.findElement((By)ele.get(1))).perform();
+			Reporter.log("Right clicked on "+(String)ele.get(0), true);
+			if(test!=null)
+			{
+			test.log(Status.PASS, "Right clicked on "+(String)ele.get(0));
+			}
+		} 
+		catch (Exception e) 
+		{
+			Reporter.log("Failed to right click on "+(String)ele.get(0), true);
+			if(test!=null)
+			{
+			test.log(Status.FAIL, "Failed to right click on "+(String)ele.get(0)+" - Exception : "+e);
+			}
+			throw e;
+		}
+
+		Thread.sleep(delay);
+	}
+	
+	public void mouseHoverOn(ArrayList<Object> ele) throws InterruptedException
+	{
+		try 
+		{
+			Actions act=new Actions(driver);
+			act.moveToElement(driver.findElement((By)ele.get(1))).perform();
+			Reporter.log("Mouse hovered on "+(String)ele.get(0), true);
+			if(test!=null)
+			{
+			test.log(Status.PASS, "Mouse hovered on "+(String)ele.get(0));
+			}
+		} 
+		catch (Exception e) 
+		{
+			Reporter.log("Failed to Mouse hover on "+(String)ele.get(0), true);
+			if(test!=null)
+			{
+			test.log(Status.FAIL, "Failed to Mouse hover on "+(String)ele.get(0)+" - Exception : "+e);
+			}
+			throw e;
+		}
+
+		Thread.sleep(delay);
+	}
+	
+	public void clickOnCoordinate(int x, int y) throws InterruptedException
+	{
+		try 
+		{
+			Actions act=new Actions(driver);
+			act.moveByOffset(x,y).click().perform();
+			Reporter.log("Clicked on "+x+","+y, true);
+			if(test!=null)
+			{
+			test.log(Status.PASS, "Clicked on "+x+","+y);
+			}
+		} 
+		catch (Exception e) 
+		{
+			Reporter.log("Failed to click on "+x+","+y, true);
+			if(test!=null)
+			{
+			test.log(Status.FAIL, "Failed to click on "+x+","+y+" - Exception : "+e);
+			}
+			throw e;
+		}
+
+		Thread.sleep(delay);
+	}
+	
+	public void clickOnCurrentCursorPoint() throws InterruptedException
+	{
+		try 
+		{
+			Actions act=new Actions(driver);
+			act.click().perform();
+			Reporter.log("Clicked on current cursor point", true);
+			if(test!=null)
+			{
+			test.log(Status.PASS, "Clicked on current cursor point");
+			}
+		} 
+		catch (Exception e) 
+		{
+			Reporter.log("Clicked on current cursor point", true);
+			if(test!=null)
+			{
+			test.log(Status.FAIL, "Clicked on current cursor point - Exception : "+e);
 			}
 			throw e;
 		}
@@ -780,5 +910,541 @@ public class Utilities {
 		
 		return mapData;
 	}
+	
+	public void selectDropdownOptionByIndex(ArrayList<Object> ele, int index) throws InterruptedException
+	{
+		try 
+		{
+			Select s=new Select(driver.findElement((By)ele.get(1)));
+			s.selectByIndex(index);
+			Reporter.log("selected index : "+index+" from "+(String)ele.get(0), true);
+			if(test!=null)
+			{
+			test.log(Status.PASS, "selected index : "+index+" from "+(String)ele.get(0));
+			}
+		} 
+		catch (Exception e) 
+		{
+			Reporter.log("Failed to select index : "+index, true);
+			if(test!=null)
+			{
+			test.log(Status.FAIL, "Failed to select index : "+index+" - Exception : "+e);
+			}
+			throw e;
+		}
 
+		Thread.sleep(delay);
+	}
+	
+	public void selectDropdownOptionByValueAttribute(ArrayList<Object> ele, String val) throws InterruptedException
+	{
+		try 
+		{
+			Select s=new Select(driver.findElement((By)ele.get(1)));
+			s.selectByValue(val);
+			Reporter.log("selected "+val+" from "+(String)ele.get(0), true);
+			if(test!=null)
+			{
+			test.log(Status.PASS, "selected "+val+" from "+(String)ele.get(0));
+			}
+		} 
+		catch (Exception e) 
+		{
+			Reporter.log("Failed to select : "+val, true);
+			if(test!=null)
+			{
+			test.log(Status.FAIL, "Failed to select : "+val+" - Exception : "+e);
+			}
+			throw e;
+		}
+
+		Thread.sleep(delay);
+	}
+	
+	public void selectDropdownOptionByText(ArrayList<Object> ele, String text) throws InterruptedException
+	{
+		try 
+		{
+			Select s=new Select(driver.findElement((By)ele.get(1)));
+			s.selectByVisibleText(text);
+			Reporter.log("selected "+text+" from "+(String)ele.get(0), true);
+			if(test!=null)
+			{
+			test.log(Status.PASS, "selected "+text+" from "+(String)ele.get(0));
+			}
+		} 
+		catch (Exception e) 
+		{
+			Reporter.log("Failed to select : "+text, true);
+			if(test!=null)
+			{
+			test.log(Status.FAIL, "Failed to select : "+text+" - Exception : "+e);
+			}
+			throw e;
+		}
+
+		Thread.sleep(delay);
+	}
+	
+	public void switchTabIfUrlIs(String url) throws InterruptedException
+	{
+		String parentId="";
+		try 
+		{
+			parentId=driver.getWindowHandle();
+			Set<String> sessionId = driver.getWindowHandles();
+			int loop=0;
+			for (String id : sessionId) {
+				driver.switchTo().window(id);
+				if (driver.getCurrentUrl().equals(url)) {
+					break;
+				}
+				loop++;
+			}
+			if (loop==sessionId.size()) 
+			{
+				driver.switchTo().window(parentId);
+				throw new NullPointerException(); 
+			}
+			Reporter.log("Switched to tab with Url : "+url, true);
+			if(test!=null)
+			{
+			test.log(Status.PASS, "Switched to tab with Url : "+url);
+			}
+		} 
+		catch (NullPointerException e) 
+		{
+			Reporter.log("Failed to switch : No Url found", true);
+			if(test!=null)
+			{
+			test.log(Status.FAIL, "Failed to switch : No Url found");
+			}
+			throw e;
+		}
+		catch (Exception e) 
+		{
+			Reporter.log("Failed to switch", true);
+			if(test!=null)
+			{
+			test.log(Status.FAIL, "Failed to switch - Exception : "+e);
+			}
+			throw e;
+		}
+
+		Thread.sleep(delay);
+	}
+	
+	public void switchTabIfTitleIs(String title) throws InterruptedException
+	{
+		String parentId="";
+		try 
+		{
+			parentId=driver.getWindowHandle();
+			Set<String> sessionId = driver.getWindowHandles();
+			int loop=0;
+			for (String id : sessionId) {
+				driver.switchTo().window(id);
+				if (driver.getTitle().equals(title)) {
+					break;
+				}
+				loop++;
+			}
+			if (loop==sessionId.size()) 
+			{
+				driver.switchTo().window(parentId);
+				throw new NullPointerException(); 
+			}
+			Reporter.log("Switched to tab with title : "+title, true);
+			if(test!=null)
+			{
+			test.log(Status.PASS, "Switched to tab with title : "+title);
+			}
+		} 
+		catch (NullPointerException e) 
+		{
+			Reporter.log("Failed to switch : No title found", true);
+			if(test!=null)
+			{
+			test.log(Status.FAIL, "Failed to switch : No title found");
+			}
+			throw e;
+		}
+		catch (Exception e) 
+		{
+			Reporter.log("Failed to switch", true);
+			if(test!=null)
+			{
+			test.log(Status.FAIL, "Failed to switch - Exception : "+e);
+			}
+			throw e;
+		}
+
+		Thread.sleep(delay);
+	}
+
+	public void switchTabIfUrlContains(String url) throws InterruptedException
+	{
+		String parentId="";
+		try 
+		{
+			parentId=driver.getWindowHandle();
+			Set<String> sessionId = driver.getWindowHandles();
+			int loop=0;
+			for (String id : sessionId) {
+				driver.switchTo().window(id);
+				if (driver.getCurrentUrl().contains(url)) {
+					break;
+				}
+				loop++;
+			}
+			if (loop==sessionId.size()) 
+			{
+				driver.switchTo().window(parentId);
+				throw new NullPointerException(); 
+			}
+			Reporter.log("Switched to tab containing Url : "+url, true);
+			if(test!=null)
+			{
+			test.log(Status.PASS, "Switched to tab containing Url : "+url);
+			}
+		} 
+		catch (NullPointerException e) 
+		{
+			Reporter.log("Failed to switch : No Url found", true);
+			if(test!=null)
+			{
+			test.log(Status.FAIL, "Failed to switch : No Url found");
+			}
+			throw e;
+		}
+		catch (Exception e) 
+		{
+			Reporter.log("Failed to switch", true);
+			if(test!=null)
+			{
+			test.log(Status.FAIL, "Failed to switch - Exception : "+e);
+			}
+			throw e;
+		}
+
+		Thread.sleep(delay);
+	}
+	
+	public void switchTabIfTitleContains(String title) throws InterruptedException
+	{
+		String parentId="";
+		try 
+		{
+			parentId=driver.getWindowHandle();
+			Set<String> sessionId = driver.getWindowHandles();
+			int loop=0;
+			for (String id : sessionId) {
+				driver.switchTo().window(id);
+				if (driver.getTitle().contains(title)) {
+					break;
+				}
+				loop++;
+			}
+			if (loop==sessionId.size()) 
+			{
+				driver.switchTo().window(parentId);
+				throw new NullPointerException(); 
+			}
+			Reporter.log("Switched to tab containing title : "+title, true);
+			if(test!=null)
+			{
+			test.log(Status.PASS, "Switched to tab containing title : "+title);
+			}
+		} 
+		catch (NullPointerException e) 
+		{
+			Reporter.log("Failed to switch : No title found", true);
+			if(test!=null)
+			{
+			test.log(Status.FAIL, "Failed to switch : No title found");
+			}
+			throw e;
+		}
+		catch (Exception e) 
+		{
+			Reporter.log("Failed to switch", true);
+			if(test!=null)
+			{
+			test.log(Status.FAIL, "Failed to switch - Exception : "+e);
+			}
+			throw e;
+		}
+
+		Thread.sleep(delay);
+	}
+	
+	public void scrollTillVisibilityOF(ArrayList<Object> ele) throws InterruptedException
+	{
+		try 
+		{   
+			WebElement element = driver.findElement((By)ele.get(1));
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+            js.executeScript("arguments[0].scrollIntoView(true);", element);
+			Reporter.log("Scrolled till "+(String)ele.get(0), true);
+			if(test!=null)
+			{
+			test.log(Status.PASS, "Scrolled till "+(String)ele.get(0));
+			}
+		} 
+		catch (Exception e) 
+		{
+			Reporter.log("Failed to scroll till "+(String)ele.get(0), true);
+			if(test!=null)
+			{
+			test.log(Status.FAIL, "Failed to scroll till "+(String)ele.get(0)+" - Exception : "+e);
+			}
+			throw e;
+		}
+
+		Thread.sleep(delay);
+	}
+	
+	public void dragAndDrop(ArrayList<Object> dragEle, ArrayList<Object> dropEle) throws InterruptedException
+	{
+		try 
+		{   
+			WebElement drag = driver.findElement((By)dragEle.get(1));
+			WebElement drop = driver.findElement((By)dropEle.get(1));
+			Actions act=new Actions(driver);
+			act.dragAndDrop(drag, drop).perform();
+			Reporter.log("Dragged "+(String)dragEle.get(0)+" and dropped into "+(String)dropEle.get(0), true);
+			if(test!=null)
+			{
+			test.log(Status.PASS, "Dragged "+(String)dragEle.get(0)+" and dropped into "+(String)dropEle.get(0));
+			}
+		} 
+		catch (Exception e) 
+		{
+			Reporter.log("Failed to drag and drop", true);
+			if(test!=null)
+			{
+			test.log(Status.FAIL, "Failed to drag and drop - Exception : "+e);
+			}
+			throw e;
+		}
+
+		Thread.sleep(delay);
+	}
+	
+	public void switchToIframeWithIndex(int index) throws InterruptedException
+	{
+		try 
+		{   
+			driver.switchTo().frame(index);
+			Reporter.log("Switched to iFrame with index : "+index, true);
+			if(test!=null)
+			{
+			test.log(Status.PASS, "Switched to iFrame with index : "+index);
+			}
+		} 
+		catch (Exception e) 
+		{
+			Reporter.log("Failed to switch to iFrame with index : "+index, true);
+			if(test!=null)
+			{
+			test.log(Status.FAIL, "Failed to switch to iFrame with index : "+index+" - Exception : "+e);
+			}
+			throw e;
+		}
+
+		Thread.sleep(delay);
+	}
+	
+	public void switchToIframeWithNameOrId(String idOrName) throws InterruptedException
+	{
+		try 
+		{   
+			driver.switchTo().frame(idOrName);
+			Reporter.log("Switched to iFrame with id or name = "+idOrName, true);
+			if(test!=null)
+			{
+			test.log(Status.PASS, "Switched to iFrame with id or name = "+idOrName);
+			}
+		} 
+		catch (Exception e) 
+		{
+			Reporter.log("Failed to switch to iFrame with id or name = "+idOrName, true);
+			if(test!=null)
+			{
+			test.log(Status.FAIL, "Failed to switch to iFrame with id or name = "+idOrName+" - Exception : "+e);
+			}
+			throw e;
+		}
+
+		Thread.sleep(delay);
+	}
+	
+	public void switchToIframeWithElemnet(ArrayList<Object> ele) throws InterruptedException
+	{
+		try 
+		{   
+			driver.switchTo().frame(driver.findElement((By)ele.get(1)));
+			Reporter.log("Switched to "+(String)ele.get(0), true);
+			if(test!=null)
+			{
+			test.log(Status.PASS, "Switched to "+(String)ele.get(0));
+			}
+		} 
+		catch (Exception e) 
+		{
+			Reporter.log("Failed to switch to "+(String)ele.get(0), true);
+			if(test!=null)
+			{
+			test.log(Status.FAIL, "Failed to switch to "+(String)ele.get(0)+" - Exception : "+e);
+			}
+			throw e;
+		}
+
+		Thread.sleep(delay);
+	}
+	
+	public void switchToParentFrame() throws InterruptedException
+	{
+		try 
+		{   
+			driver.switchTo().parentFrame();
+			Reporter.log("Switched to parent frame", true);
+			if(test!=null)
+			{
+			test.log(Status.PASS, "Switched to parent frame");
+			}
+		} 
+		catch (Exception e) 
+		{
+			Reporter.log("Failed to switch to parent frame", true);
+			if(test!=null)
+			{
+			test.log(Status.FAIL, "Failed to switch to parent frame - Exception : "+e);
+			}
+			throw e;
+		}
+
+		Thread.sleep(delay);
+	}
+	
+	public void switchToDefaultWindow() throws InterruptedException
+	{
+		try 
+		{   
+			driver.switchTo().defaultContent();
+			Reporter.log("Switched to default window", true);
+			if(test!=null)
+			{
+			test.log(Status.PASS, "Switched to default window");
+			}
+		} 
+		catch (Exception e) 
+		{
+			Reporter.log("Failed to switch to default window", true);
+			if(test!=null)
+			{
+			test.log(Status.FAIL, "Failed to switch to default window - Exception : "+e);
+			}
+			throw e;
+		}
+
+		Thread.sleep(delay);
+	}
+	
+	public void alertPopup_ClickOKButton() throws InterruptedException
+	{
+		try 
+		{   
+			driver.switchTo().alert().accept();
+			Reporter.log("Clicked ok button on Alert popup", true);
+			if(test!=null)
+			{
+			test.log(Status.PASS, "Clicked ok button on Alert popup");
+			}
+		} 
+		catch (Exception e) 
+		{
+			Reporter.log("Failed to click on ok button on Alert popup", true);
+			if(test!=null)
+			{
+			test.log(Status.FAIL, "Failed to click on ok button on Alert popup - Exception : "+e);
+			}
+			throw e;
+		}
+
+		Thread.sleep(delay);
+	}
+	
+	public void alertPopup_ClickCancelButton() throws InterruptedException
+	{
+		try 
+		{   
+			driver.switchTo().alert().dismiss();
+			Reporter.log("Clicked cancel button on Alert popup", true);
+			if(test!=null)
+			{
+			test.log(Status.PASS, "Clicked cancel button on Alert popup");
+			}
+		} 
+		catch (Exception e) 
+		{
+			Reporter.log("Failed to click on cancel button on Alert popup", true);
+			if(test!=null)
+			{
+			test.log(Status.FAIL, "Failed to click on cancel button on Alert popup - Exception : "+e);
+			}
+			throw e;
+		}
+
+		Thread.sleep(delay);
+	}
+	
+	public void alertPopup_EnterMessage(String input) throws InterruptedException
+	{
+		try 
+		{   
+			driver.switchTo().alert().sendKeys(input);
+			Reporter.log("Entered "+input+" on Alert popup", true);
+			if(test!=null)
+			{
+			test.log(Status.PASS, "Entered "+input+" on Alert popup");
+			}
+		} 
+		catch (Exception e) 
+		{
+			Reporter.log("Failed to enter "+input+" on Alert popup", true);
+			if(test!=null)
+			{
+			test.log(Status.FAIL, "Failed to enter "+input+" on Alert popup - Exception : "+e);
+			}
+			throw e;
+		}
+
+		Thread.sleep(delay);
+	}
+	
+	public void UploadFile(ArrayList<Object> ele, String filePath) throws InterruptedException
+	{
+		try 
+		{   
+			driver.findElement((By)ele.get(1)).sendKeys(filePath);
+			Reporter.log("Uploaded file : "+(String)ele.get(0), true);
+			if(test!=null)
+			{
+			test.log(Status.PASS, "Uploaded file : "+(String)ele.get(0));
+			}
+		} 
+		catch (Exception e) 
+		{
+			Reporter.log("Failed to upload file : "+(String)ele.get(0), true);
+			if(test!=null)
+			{
+			test.log(Status.FAIL, "Failed to upload file : "+(String)ele.get(0)+" - Exception : "+e);
+			}
+			throw e;
+		}
+
+		Thread.sleep(delay);
+	}
+	
 }
