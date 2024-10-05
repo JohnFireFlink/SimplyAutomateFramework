@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Oct 04 10:47:58 IST 2024</td>
+<td>Started on:</td><td>Sat Oct 05 18:26:31 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>28 seconds (28865 ms)</td>
+<tr><td>Total time:</td><td>62 seconds (62773 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,23 +76,45 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='webTestCases.Module1.tc002()'><b>tc002</b><br>Test class: webTestCases.Module1<br/>
-<a href="#Output-670153696" onClick='toggleBox("Output-670153696", this, "Show output", "Hide output");'>Show output</a>
+<td title='webTestCases.Module1.tc001()'><b>tc001</b><br>Test class: webTestCases.Module1<br/>
+<a href="#Output-1082795132" onClick='toggleBox("Output-1082795132", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-670153696" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-670153696">
+<a href="#Output-1082795132" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1082795132">
 Chrome browser launched<br/>
 Browser maximized<br/>
 Navigated to https://google.com/<br/>
 Implicit wait set to 5 seconds<br/>
 Mouse hovered on Gmail Link<br/>
 Clicked on current cursor point<br/>
-Failed to switch : No Url found<br/>
+Failed to verify Gmail Link<br/>
 </div>
 </td>
-<td><div><pre>java.lang.NullPointerException
-	at genericLib.Utilities.switchTabIfUrlIs(Utilities.java:1007)
-	at webTestCases.Module1.tc002(Module1.java:30)
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@aria-label=&apos;Gmail &apos;]&quot;}
+  (Session info: chrome=129.0.6668.90)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [eb6bab23945aa1899e2c910a463299e9, findElement {value=//a[@aria-label=&apos;Gmail &apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64696}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64696/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: eb6bab23945aa1899e2c910a463299e9
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at genericLib.Utilities.verifyIfDisplayed(Utilities.java:546)
+	at webTestCases.Module1.tc001(Module1.java:18)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -119,10 +141,32 @@ Failed to switch : No Url found<br/>
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace670153696", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace670153696'><pre>java.lang.NullPointerException
-	at genericLib.Utilities.switchTabIfUrlIs(Utilities.java:1007)
-	at webTestCases.Module1.tc002(Module1.java:30)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1082795132", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1082795132'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@aria-label=&apos;Gmail &apos;]&quot;}
+  (Session info: chrome=129.0.6668.90)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [eb6bab23945aa1899e2c910a463299e9, findElement {value=//a[@aria-label=&apos;Gmail &apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64696}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64696/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: eb6bab23945aa1899e2c910a463299e9
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at genericLib.Utilities.verifyIfDisplayed(Utilities.java:546)
+	at webTestCases.Module1.tc001(Module1.java:18)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -150,7 +194,7 @@ Failed to switch : No Url found<br/>
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>12</td>
+<td>25</td>
 <td>webTestCases.Module1@536f2a7e</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -162,22 +206,21 @@ Failed to switch : No Url found<br/>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='webTestCases.Module1.tc001()'><b>tc001</b><br>Test class: webTestCases.Module1<br/>
-<a href="#Output-573102881" onClick='toggleBox("Output-573102881", this, "Show output", "Hide output");'>Show output</a>
+<td title='webTestCases.Module1.tc002()'><b>tc002</b><br>Test class: webTestCases.Module1<br/>
+<a href="#Output-1472036907" onClick='toggleBox("Output-1472036907", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-573102881" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-573102881">
+<a href="#Output-1472036907" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1472036907">
 Chrome browser launched<br/>
 Browser maximized<br/>
 Navigated to https://google.com/<br/>
 Implicit wait set to 5 seconds<br/>
 Mouse hovered on Gmail Link<br/>
 Clicked on current cursor point<br/>
-Create Account button is displayed<br/>
 </div>
 </td>
 <td></td>
-<td>15</td>
+<td>36</td>
 <td>webTestCases.Module1@536f2a7e</td></tr>
 </table><p>
 </body>

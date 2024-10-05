@@ -20,10 +20,7 @@
       <![CDATA[Clicked on current cursor point]]>
     </line>
     <line>
-      <![CDATA[Create Account button is displayed]]>
-    </line>
-    <line>
-      <![CDATA[Browser closed]]>
+      <![CDATA[Failed to verify Gmail Link]]>
     </line>
     <line>
       <![CDATA[Chrome browser launched]]>
@@ -44,67 +41,61 @@
       <![CDATA[Clicked on current cursor point]]>
     </line>
     <line>
-      <![CDATA[Failed to switch : No Url found]]>
+      <![CDATA[Browser closed]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-10-04T10:47:58 IST" name="Default suite" finished-at="2024-10-04T10:48:27 IST" duration-ms="28865">
+  <suite started-at="2024-10-05T18:26:31 IST" name="Default suite" finished-at="2024-10-05T18:27:34 IST" duration-ms="62773">
     <groups>
     </groups>
-    <test started-at="2024-10-04T10:47:58 IST" name="Default test" finished-at="2024-10-04T10:48:27 IST" duration-ms="28865">
+    <test started-at="2024-10-05T18:26:31 IST" name="Default test" finished-at="2024-10-05T18:27:34 IST" duration-ms="62773">
       <class name="webTestCases.Module1">
-        <test-method is-config="true" signature="setUpReport()[pri:0, instance:webTestCases.Module1@536f2a7e]" started-at="2024-10-04T10:47:58 IST" name="setUpReport" finished-at="2024-10-04T10:47:58 IST" duration-ms="341" status="PASS">
+        <test-method is-config="true" signature="setUpReport()[pri:0, instance:webTestCases.Module1@536f2a7e]" started-at="2024-10-05T18:26:31 IST" name="setUpReport" finished-at="2024-10-05T18:26:31 IST" duration-ms="305" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpReport -->
-        <test-method is-config="true" signature="setEnvironment()[pri:0, instance:webTestCases.Module1@536f2a7e]" started-at="2024-10-04T10:47:58 IST" name="setEnvironment" finished-at="2024-10-04T10:47:58 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setEnvironment()[pri:0, instance:webTestCases.Module1@536f2a7e]" started-at="2024-10-05T18:26:31 IST" name="setEnvironment" finished-at="2024-10-05T18:26:31 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setEnvironment -->
-        <test-method signature="tc001()[pri:0, instance:webTestCases.Module1@536f2a7e]" started-at="2024-10-04T10:47:58 IST" name="tc001" finished-at="2024-10-04T10:48:14 IST" duration-ms="15772" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Chrome browser launched]]>
-            </line>
-            <line>
-              <![CDATA[Browser maximized]]>
-            </line>
-            <line>
-              <![CDATA[Navigated to https://google.com/]]>
-            </line>
-            <line>
-              <![CDATA[Implicit wait set to 5 seconds]]>
-            </line>
-            <line>
-              <![CDATA[Mouse hovered on Gmail Link]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on current cursor point]]>
-            </line>
-            <line>
-              <![CDATA[Create Account button is displayed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- tc001 -->
-        <test-method is-config="true" signature="testOver(org.testng.ITestResult)[pri:0, instance:webTestCases.Module1@536f2a7e]" started-at="2024-10-04T10:48:14 IST" name="testOver" finished-at="2024-10-04T10:48:14 IST" duration-ms="334" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=tc001 status=SUCCESS method=Module1.tc001()[pri:0, instance:webTestCases.Module1@536f2a7e] output=Chrome browser launched]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Browser closed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testOver -->
-        <test-method signature="tc002()[pri:0, instance:webTestCases.Module1@536f2a7e]" started-at="2024-10-04T10:48:14 IST" name="tc002" finished-at="2024-10-04T10:48:27 IST" duration-ms="12545" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="tc001()[pri:0, instance:webTestCases.Module1@536f2a7e]" started-at="2024-10-05T18:26:31 IST" name="tc001" finished-at="2024-10-05T18:26:57 IST" duration-ms="25277" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@aria-label='Gmail ']"}
+  (Session info: chrome=129.0.6668.90)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [eb6bab23945aa1899e2c910a463299e9, findElement {value=//a[@aria-label='Gmail '], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64696}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64696/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: eb6bab23945aa1899e2c910a463299e9]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at genericLib.Utilities.switchTabIfUrlIs(Utilities.java:1007)
-at webTestCases.Module1.tc002(Module1.java:30)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@aria-label='Gmail ']"}
+  (Session info: chrome=129.0.6668.90)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [eb6bab23945aa1899e2c910a463299e9, findElement {value=//a[@aria-label='Gmail '], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64696}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64696/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: eb6bab23945aa1899e2c910a463299e9
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at genericLib.Utilities.verifyIfDisplayed(Utilities.java:546)
+at webTestCases.Module1.tc001(Module1.java:18)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -133,7 +124,7 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
             <line>
               <![CDATA[Chrome browser launched]]>
@@ -154,22 +145,58 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
               <![CDATA[Clicked on current cursor point]]>
             </line>
             <line>
-              <![CDATA[Failed to switch : No Url found]]>
+              <![CDATA[Failed to verify Gmail Link]]>
             </line>
           </reporter-output>
-        </test-method> <!-- tc002 -->
-        <test-method is-config="true" signature="testOver(org.testng.ITestResult)[pri:0, instance:webTestCases.Module1@536f2a7e]" started-at="2024-10-04T10:48:27 IST" name="testOver" finished-at="2024-10-04T10:48:27 IST" duration-ms="149" status="PASS">
+        </test-method> <!-- tc001 -->
+        <test-method is-config="true" signature="testOver(org.testng.ITestResult)[pri:0, instance:webTestCases.Module1@536f2a7e]" started-at="2024-10-05T18:26:57 IST" name="testOver" finished-at="2024-10-05T18:26:57 IST" duration-ms="121" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=tc002 status=FAILURE method=Module1.tc002()[pri:0, instance:webTestCases.Module1@536f2a7e] output=Chrome browser launched]]]>
+                <![CDATA[[TestResult name=tc001 status=FAILURE method=Module1.tc001()[pri:0, instance:webTestCases.Module1@536f2a7e] output=Chrome browser launched]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOver -->
-        <test-method is-config="true" signature="updateReport()[pri:0, instance:webTestCases.Module1@536f2a7e]" started-at="2024-10-04T10:48:27 IST" name="updateReport" finished-at="2024-10-04T10:48:28 IST" duration-ms="886" status="PASS">
+        <test-method signature="tc002()[pri:0, instance:webTestCases.Module1@536f2a7e]" started-at="2024-10-05T18:26:57 IST" name="tc002" finished-at="2024-10-05T18:27:34 IST" duration-ms="36954" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Chrome browser launched]]>
+            </line>
+            <line>
+              <![CDATA[Browser maximized]]>
+            </line>
+            <line>
+              <![CDATA[Navigated to https://google.com/]]>
+            </line>
+            <line>
+              <![CDATA[Implicit wait set to 5 seconds]]>
+            </line>
+            <line>
+              <![CDATA[Mouse hovered on Gmail Link]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on current cursor point]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc002 -->
+        <test-method is-config="true" signature="testOver(org.testng.ITestResult)[pri:0, instance:webTestCases.Module1@536f2a7e]" started-at="2024-10-05T18:27:34 IST" name="testOver" finished-at="2024-10-05T18:27:34 IST" duration-ms="347" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc002 status=SUCCESS method=Module1.tc002()[pri:0, instance:webTestCases.Module1@536f2a7e] output=Chrome browser launched]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Browser closed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testOver -->
+        <test-method is-config="true" signature="updateReport()[pri:0, instance:webTestCases.Module1@536f2a7e]" started-at="2024-10-05T18:27:34 IST" name="updateReport" finished-at="2024-10-05T18:27:35 IST" duration-ms="728" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateReport -->

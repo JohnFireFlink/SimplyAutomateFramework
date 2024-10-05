@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\User\AppData\Local\Temp\testng-eclipse-1179150558\testng-customsuite.xml</span>
+                    <span>C:\Users\User\AppData\Local\Temp\testng-eclipse--852867957\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="webTestCases.Module1" class="method navigator-link" hash-for-method="tc002">tc002</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="webTestCases.Module1" class="method navigator-link" hash-for-method="tc001">tc001</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -117,7 +117,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="webTestCases.Module1" class="method navigator-link" hash-for-method="tc001">tc001</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="webTestCases.Module1" class="method navigator-link" hash-for-method="tc002">tc002</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -140,12 +140,34 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="tc002">
-                  </a> <!-- tc002 -->
-                  <span class="method-name">tc002</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at genericLib.Utilities.switchTabIfUrlIs(Utilities.java:1007)
-	at webTestCases.Module1.tc002(Module1.java:30)
+                  <a name="tc001">
+                  </a> <!-- tc001 -->
+                  <span class="method-name">tc001</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@aria-label=&apos;Gmail &apos;]&quot;}
+  (Session info: chrome=129.0.6668.90)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [eb6bab23945aa1899e2c910a463299e9, findElement {value=//a[@aria-label=&apos;Gmail &apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64696}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64696/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: eb6bab23945aa1899e2c910a463299e9
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at genericLib.Utilities.verifyIfDisplayed(Utilities.java:546)
+	at webTestCases.Module1.tc001(Module1.java:18)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -186,9 +208,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="tc001">
-                  </a> <!-- tc001 -->
-                  <span class="method-name">tc001</span>
+                  <a name="tc002">
+                  </a> <!-- tc002 -->
+                  <span class="method-name">tc002</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -196,7 +218,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\User\AppData\Local\Temp\testng-eclipse-1179150558\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\User\AppData\Local\Temp\testng-eclipse--852867957\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -247,18 +269,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'tc001')
+data.setCell(0, 1, 'tc002')
 data.setCell(0, 2, 'webTestCases.Module1')
-data.setCell(0, 3, 15772);
+data.setCell(0, 3, 36954);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'tc002')
+data.setCell(1, 1, 'tc001')
 data.setCell(1, 2, 'webTestCases.Module1')
-data.setCell(1, 3, 12545);
+data.setCell(1, 3, 25277);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 28 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -270,18 +292,6 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">tc001</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Chrome browser launched</span>
-                <span class="reporter-method-output">Browser maximized</span>
-                <span class="reporter-method-output">Navigated to https://google.com/</span>
-                <span class="reporter-method-output">Implicit wait set to 5 seconds</span>
-                <span class="reporter-method-output">Mouse hovered on Gmail Link</span>
-                <span class="reporter-method-output">Clicked on current cursor point</span>
-                <span class="reporter-method-output">Create Account button is displayed</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
               <span class="reporter-method-name">tc002</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Chrome browser launched</span>
@@ -290,7 +300,18 @@ return data;
                 <span class="reporter-method-output">Implicit wait set to 5 seconds</span>
                 <span class="reporter-method-output">Mouse hovered on Gmail Link</span>
                 <span class="reporter-method-output">Clicked on current cursor point</span>
-                <span class="reporter-method-output">Failed to switch : No Url found</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">tc001</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Chrome browser launched</span>
+                <span class="reporter-method-output">Browser maximized</span>
+                <span class="reporter-method-output">Navigated to https://google.com/</span>
+                <span class="reporter-method-output">Implicit wait set to 5 seconds</span>
+                <span class="reporter-method-output">Mouse hovered on Gmail Link</span>
+                <span class="reporter-method-output">Clicked on current cursor point</span>
+                <span class="reporter-method-output">Failed to verify Gmail Link</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -315,29 +336,29 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">setEnvironment</span>
-                <span class="method-start">373 ms</span>
+                <span class="method-start">335 ms</span>
               </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">tc001</span>
-                <span class="method-start">386 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">testOver([TestResult name=tc001 status=SUCCESS method=Module1.tc001()[pri:0, instance:webTestCases.Module1@53...)</span>
-                <span class="method-start">16166 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">tc002</span>
-                <span class="method-start">16503 ms</span>
+                <span class="method-name">tc001</span>
+                <span class="method-start">347 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">testOver([TestResult name=tc002 status=FAILURE method=Module1.tc002()[pri:0, instance:webTestCases.Module1@53...)</span>
-                <span class="method-start">29055 ms</span>
+                <span class="method-name">testOver([TestResult name=tc001 status=FAILURE method=Module1.tc001()[pri:0, instance:webTestCases.Module1@53...)</span>
+                <span class="method-start">25639 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">tc002</span>
+                <span class="method-start">25777 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testOver([TestResult name=tc002 status=SUCCESS method=Module1.tc002()[pri:0, instance:webTestCases.Module1@53...)</span>
+                <span class="method-start">62733 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">updateReport</span>
-                <span class="method-start">29285 ms</span>
+                <span class="method-start">63175 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

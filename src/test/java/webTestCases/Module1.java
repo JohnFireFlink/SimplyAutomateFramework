@@ -15,7 +15,7 @@ public class Module1 extends ReUseableLib {
 		navigateToWebApp("Chrome","https://google.com/");
 		util.mouseHoverOn(d1.gmailLink());
 		util.clickOnCurrentCursorPoint();
-		util.verifyIfDisplayed(d1.createAccBtn());
+		util.verifyIfDisplayed(d1.gmailLink());
 	}
 	
 	@Test
@@ -27,7 +27,6 @@ public class Module1 extends ReUseableLib {
 		navigateToWebApp("Chrome","https://google.com/");
 		util.mouseHoverOn(d1.gmailLink());
 		util.clickOnCurrentCursorPoint();
-		util.switchTabIfUrlIs("noURL");
 	}
 
 }

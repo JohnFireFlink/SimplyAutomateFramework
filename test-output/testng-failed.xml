@@ -9,7 +9,7 @@
           <include name="setUpReport"/>
           <include name="testOver"/>
           <include name="setEnvironment"/>
-          <include name="tc002"/>
+          <include name="tc001"/>
         </methods>
       </class> <!-- webTestCases.Module1 -->
     </classes>
