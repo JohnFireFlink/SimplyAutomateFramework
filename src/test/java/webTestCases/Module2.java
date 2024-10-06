@@ -11,15 +11,8 @@ public class Module2 extends ReUseableLib {
 	{
 		generateReport();
 		util.setDelayBtwnSteps(1);
-		if (os.contains("win") || os.contains("mac")) 
-		{
-			util.openChromeWithProfile("TestUser");
-		}
-		else
-		{
-			util.openHeadLessChromeWithProfile("TestUser");
-		}
 		
+		util.openBrowser("Chrome");
 		util.navigateTo("https://gmail.com");
 		util.getCurrentPageTitle();
 		Thread.sleep(5000);
