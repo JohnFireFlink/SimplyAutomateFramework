@@ -12,14 +12,9 @@ public class Module2 extends ReUseableLib {
 		generateReport();
 		util.setDelayBtwnSteps(1);
 		
+		util.openChromeWithProfile("TestUser");
+		util.navigateTo("https://gmail.com");
+		util.getCurrentPageTitle();
+		Thread.sleep(5000);
 	}
-	
-	@Test
-	public void tc002() throws InterruptedException
-	{
-		generateReport();
-		util.setDelayBtwnSteps(1);
-		
-	}
-
 }

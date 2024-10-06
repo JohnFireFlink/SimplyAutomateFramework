@@ -109,6 +109,36 @@ public class Utilities {
 	
 //NLP's
 	
+	public void openChromeWithProfile(String profilePath) throws InterruptedException
+	{
+		try 
+		{   
+			ChromeOptions opt=new ChromeOptions();
+			String userDirPath = System.getProperty("user.dir")+"\\src\\test\\resources\\";
+			opt.addArguments("--user-data-dir="+userDirPath+profilePath);
+			driver=new ChromeDriver(opt);
+			passMessage="Opened browser with specified profile";
+
+			Reporter.log(passMessage, true);
+			if(test!=null)
+			{
+			test.log(Status.PASS, passMessage);
+			}
+		} 
+		catch (Exception e) 
+		{
+	        failMessage="Failed to oprn browser";
+			Reporter.log(failMessage, true);
+			if(test!=null)
+			{
+			test.log(Status.FAIL, failMessage+"  - Exception : "+e);
+			}
+			throw e;
+		}
+
+		Thread.sleep(delay);
+	}
+	
 	public void openBrowser(String browserName) throws InterruptedException
 	{
 		String bName = browserName.toLowerCase();
@@ -246,6 +276,36 @@ public class Utilities {
 
 		Thread.sleep(delay);
 	}
+	
+	public String getCurrentPageTitle() throws InterruptedException
+	{
+		String title="";
+		try 
+		{   
+			title=driver.getTitle();
+	
+			passMessage="Page title : "+title;
+			Reporter.log(passMessage, true);
+			if(test!=null)
+			{
+			test.log(Status.PASS, passMessage);
+			}
+		} 
+		catch (Exception e) 
+		{
+	        failMessage="Failed to fetch title of current page";
+			Reporter.log(failMessage, true);
+			if(test!=null)
+			{
+			test.log(Status.FAIL, failMessage+"  - Exception : "+e);
+			}
+			throw e;
+		}
+
+		Thread.sleep(delay);
+		return title;
+	}
+
 	
 	public ArrayList<String> getTextOfAllElements(ArrayList<Object> ele) throws InterruptedException
 	{

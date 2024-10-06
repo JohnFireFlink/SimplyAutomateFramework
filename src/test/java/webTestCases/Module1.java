@@ -15,18 +15,7 @@ public class Module1 extends ReUseableLib {
 		navigateToWebApp("Chrome","https://google.com/");
 		util.mouseHoverOn(d1.gmailLink());
 		util.clickOnCurrentCursorPoint();
-		util.verifyIfDisplayed(d1.gmailLink());
+		util.verifyIfDisplayed(d1.createAccBtn());
 	}
 	
-	@Test
-	public void tc002() throws InterruptedException
-	{
-		generateReport();
-		util.setDelayBtwnSteps(1);
-		
-		navigateToWebApp("Chrome","https://google.com/");
-		util.mouseHoverOn(d1.gmailLink());
-		util.clickOnCurrentCursorPoint();
-	}
-
 }
