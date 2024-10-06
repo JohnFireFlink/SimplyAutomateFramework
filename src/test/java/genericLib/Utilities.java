@@ -1,5 +1,6 @@
 package genericLib;
 
+import java.io.FileInputStream;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -8,6 +9,9 @@ import java.util.Map;
 import java.util.Random;
 import java.util.Set;
 
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.openqa.selenium.By;
@@ -1548,4 +1552,163 @@ public class Utilities {
 		Thread.sleep(delay);
 	}
 	
+	public Map<String, String> getDataFromXLforUniqueData_SingleRowTable(String sheetName, int uniqueColIndex, String uniqueData) throws Exception 
+	{
+		List<String> keys=new ArrayList<String>();
+		List<String> values=new ArrayList<String>();
+		Map<String, String> map=new HashMap<String, String>();
+		try 
+		{   
+			FileInputStream fis=new FileInputStream("./src/test/resources/AutomateSimply.xlsx");
+			Workbook wb = WorkbookFactory.create(fis);
+			Sheet sh = wb.getSheet(sheetName);
+			int noOfRows = sh.getLastRowNum()+1;
+			int firstRowIndex=sh.getFirstRowNum();
+			int uniqueDataRowIndex=0;
+			String data="";
+			int loop=0;
+			for (int i = firstRowIndex; i < noOfRows; i++) 
+			{
+				try {
+					data = sh.getRow(i).getCell(uniqueColIndex).getStringCellValue();
+				} catch (Exception e) {	}
+				
+				if (data.equals(uniqueData)) 
+				{
+					uniqueDataRowIndex=i;
+					break;
+				}
+				loop++;
+			}
+			if (loop==noOfRows) {
+				throw new NullPointerException();
+			}
+			int firstCellIndex = sh.getRow(uniqueDataRowIndex-1).getFirstCellNum();
+			int lastCellIndex=sh.getRow(uniqueDataRowIndex-1).getLastCellNum();
+			
+			for (int i = firstCellIndex; i < lastCellIndex; i++) 
+			{
+				keys.add(sh.getRow(uniqueDataRowIndex-1).getCell(i).getStringCellValue());
+			}
+			for (int i = firstCellIndex; i < lastCellIndex; i++) 
+			{
+				values.add(sh.getRow(uniqueDataRowIndex).getCell(i).getStringCellValue()); 
+			}
+			
+			for (int i = 0; i < keys.size(); i++) {
+				map.put(keys.get(i), values.get(i));
+			}
+			
+			passMessage="MapData : "+map;
+
+			Reporter.log(passMessage, true);
+			if(test!=null)
+			{
+			test.log(Status.PASS, passMessage);
+			}
+		} 
+		catch (NullPointerException e) 
+		{
+	        failMessage="No uniqueData:"+uniqueData+" found";
+			Reporter.log(failMessage, true);
+			if(test!=null)
+			{
+			test.log(Status.FAIL, failMessage+"  - Exception : "+e);
+			}
+			throw e;
+		}
+		catch (Exception e) 
+		{
+	        failMessage="Failed to get data";
+			Reporter.log(failMessage, true);
+			if(test!=null)
+			{
+			test.log(Status.FAIL, failMessage+"  - Exception : "+e);
+			}
+			throw e;
+		}
+
+		Thread.sleep(delay);
+		return map;
+	}
+	
+	public Map<String, String> getDataFromXLforUniqueData_MultiRowTable(String sheetName, int uniqueColIndex, String uniqueData) throws Exception 
+	{
+		List<String> keys=new ArrayList<String>();
+		List<String> values=new ArrayList<String>();
+		Map<String, String> map=new HashMap<String, String>();
+		try 
+		{   
+			FileInputStream fis=new FileInputStream("./src/test/resources/AutomateSimply.xlsx");
+			Workbook wb = WorkbookFactory.create(fis);
+			Sheet sh = wb.getSheet(sheetName);
+			int noOfRows = sh.getLastRowNum()+1;
+			int firstRowIndex=sh.getFirstRowNum();
+			int uniqueDataRowIndex=0;
+			String data="";
+			int loop=0;
+			for (int i = firstRowIndex; i < noOfRows; i++) 
+			{
+				try {
+					data = sh.getRow(i).getCell(uniqueColIndex).getStringCellValue();
+				} catch (Exception e) {	}
+				
+				if (data.equals(uniqueData)) 
+				{
+					uniqueDataRowIndex=i;
+					break;
+				}
+				loop++;
+			}
+			if (loop==noOfRows) {
+				throw new NullPointerException();
+			}
+			int firstCellIndex = sh.getRow(firstRowIndex).getFirstCellNum();
+			int lastCellIndex=sh.getRow(firstRowIndex).getLastCellNum();
+			
+			for (int i = firstCellIndex; i < lastCellIndex; i++) 
+			{
+				keys.add(sh.getRow(firstRowIndex).getCell(i).getStringCellValue());
+			}
+			for (int i = firstCellIndex; i < lastCellIndex; i++) 
+			{
+				values.add(sh.getRow(uniqueDataRowIndex).getCell(i).getStringCellValue()); 
+			}
+			
+			for (int i = 0; i < keys.size(); i++) {
+				map.put(keys.get(i), values.get(i));
+			}
+			
+			passMessage="MapData : "+map;
+
+			Reporter.log(passMessage, true);
+			if(test!=null)
+			{
+			test.log(Status.PASS, passMessage);
+			}
+		} 
+		catch (NullPointerException e) 
+		{
+	        failMessage="No uniqueData:"+uniqueData+" found";
+			Reporter.log(failMessage, true);
+			if(test!=null)
+			{
+			test.log(Status.FAIL, failMessage+"  - Exception : "+e);
+			}
+			throw e;
+		}
+		catch (Exception e) 
+		{
+	        failMessage="Failed to get data";
+			Reporter.log(failMessage, true);
+			if(test!=null)
+			{
+			test.log(Status.FAIL, failMessage+"  - Exception : "+e);
+			}
+			throw e;
+		}
+
+		Thread.sleep(delay);
+		return map;
+	}
 }
