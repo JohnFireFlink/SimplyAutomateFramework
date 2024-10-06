@@ -127,7 +127,38 @@ public class Utilities {
 		} 
 		catch (Exception e) 
 		{
-	        failMessage="Failed to oprn browser";
+	        failMessage="Failed to open browser";
+			Reporter.log(failMessage, true);
+			if(test!=null)
+			{
+			test.log(Status.FAIL, failMessage+"  - Exception : "+e);
+			}
+			throw e;
+		}
+
+		Thread.sleep(delay);
+	}
+	
+	public void openHeadLessChromeWithProfile(String profilePath) throws InterruptedException
+	{
+		try 
+		{   
+			ChromeOptions opt=new ChromeOptions();
+			String userDirPath = System.getProperty("user.dir")+"\\src\\test\\resources\\";
+			opt.addArguments("--user-data-dir="+userDirPath+profilePath);
+			opt.addArguments("--headless");
+			driver=new ChromeDriver(opt);
+			passMessage="Opened browser with specified profile";
+
+			Reporter.log(passMessage, true);
+			if(test!=null)
+			{
+			test.log(Status.PASS, passMessage);
+			}
+		} 
+		catch (Exception e) 
+		{
+	        failMessage="Failed to open browser";
 			Reporter.log(failMessage, true);
 			if(test!=null)
 			{
